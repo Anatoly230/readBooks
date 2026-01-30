@@ -1,0 +1,284 @@
+{
+  "main": {
+    "id": "8b2ffd7c92057501",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9ad701e990ec590",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c25eff22105a0ebd",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "{YDKJSY}Знакомьтесь js/src/Познакомьтесь,_JavaScript_2_е_изд.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Познакомьтесь,_JavaScript_2_е_изд"
+            }
+          },
+          {
+            "id": "11f68b87d2f77c06",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
+                "viewState": {
+                  "x": 20882.63747135215,
+                  "y": 2174.9567580561716,
+                  "zoom": -0.3348766382797259
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Движок-компилятор-область видимости"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "de07fca5a0e1d798",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ff5f71e41889867",
+        "type": "tabs",
+        "dimension": 80.31496062992126,
+        "children": [
+          {
+            "id": "a491e4796b7eba8c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "49a48ae1e59306fd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "785830345c84d601",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "df09d241d2efdb8a",
+        "type": "tabs",
+        "dimension": 19.68503937007874,
+        "children": [
+          {
+            "id": "456f7e00ffaf7422",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 478.5086555480957
+  },
+  "right": {
+    "id": "da29d409c77516e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "20392503f79fc64d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b29cb5495d6e45a7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "{YDKJSY}Знакомьтесь js/src/Познакомьтесь,_JavaScript_2_е_изд.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Познакомьтесь,_JavaScript_2_е_изд"
+            }
+          },
+          {
+            "id": "39687950d44a620c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "вы пока не знаете js/Исходники/1_{ВПЕНЗJS_Познакомьтесь,_JavaScript_2_е.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 1_{ВПЕНЗJS_Познакомьтесь,_JavaScript_2_е"
+            }
+          },
+          {
+            "id": "28bc189c51891d4e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "44647f4724ae55b6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "961d45c09b4465b2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "{YDKJSY}Знакомьтесь js/src/Познакомьтесь,_JavaScript_2_е_изд.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Познакомьтесь,_JavaScript_2_е_изд"
+            }
+          },
+          {
+            "id": "81a55cf814d737eb",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 396.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "a491e4796b7eba8c",
+  "lastOpenFiles": [
+    "Js ninja secrets/src/Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
+    "Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
+    "123.pdf",
+    "Функциональное программирование/src/Функциональное программирование на js - как улучшить код.pdf",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
+    "Pasted image 20260130195114.png",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Untitled.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы",
+    "SQL/src/SQL_для_анализа_данных.pdf",
+    "SQL/src/123.pdf",
+    "SQL/src/Лист Microsoft Excel.xlsx",
+    "SQL/Лист Microsoft Excel.xlsx",
+    "Лист Microsoft Excel.xlsx",
+    "Точечный рисунок.txt",
+    "Точечный рисунок.bmp",
+    "Pasted image 20260129215522.png",
+    "Js ninja secrets/conspects/TDZ  let const class.md",
+    "Pasted image 20260120132429.png",
+    "Pasted image 20260120132510.png",
+    "Pasted image 20260123161952.png",
+    "ECMASCRIPT/9. Исполняемый код и контексты выполнения.md",
+    "ECMASCRIPT/Терминология.md",
+    "ThisMode.md",
+    "ECMASCRIPT/14.3.1 Let and Const Declarations.md",
+    "Js ninja secrets/conspects/__proto__  vs prototype.md",
+    "Js ninja secrets/conspects/Визуализация_действий_объявление_и_выполнение_функции.canvas",
+    "Js ninja secrets/conspects/Подробнее о this.md",
+    "Js ninja secrets/conspects/Немного о this.md",
+    "Js ninja secrets/conspects/Контексты выполнения функции.canvas",
+    "Js ninja secrets/conspects/Execution context.md",
+    "Js ninja secrets/conspects/Вызов функции как constructor.md",
+    "Js ninja secrets/conspects/Lexical environment  и Environment - РАЗЛИЧИЯ.md",
+    "Js ninja secrets/conspects/функция от объявления до исполнения.md",
+    "Js ninja secrets/conspects/Регистрация идентификаторов в лексических средах.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
+    "Js ninja secrets/conspects/Области видимости переменных или лексическое окружение.md",
+    "Js ninja secrets/conspects/Лексическое окружение и внутреннее свойство Enviroment.canvas",
+    "Js ninja secrets/conspects/Механизм создания объекта при помощи конструткора.canvas",
+    "Js ninja secrets/conspects/Функция-конструктор - создание объекта.canvas",
+    "Js ninja secrets/conspects/IIFO - немедленно вызываемое функциональное выражени.md",
+    "Js ninja secrets/conspects/создание объекта и лексичское окружение.canvas",
+    "Js ninja secrets/conspects/Создание объекта и лексическое окружение.canvas",
+    "заметки_наблюдения_/наблюдение.md",
+    "заметки_наблюдения_/Падший ангел.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Последовательность изучения.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/задания/Untitled.md"
+  ]
+}

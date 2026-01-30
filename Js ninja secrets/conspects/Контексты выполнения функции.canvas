@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"04e1f4eea4c8b8e4","type":"text","text":"```js\n{\nprop = value;\nskulk = function(){\n\t\treturn this;\n\t};\ngetCounter = function(){\n\t\treturn counter;\n\t};\nsetCounter = function(){\n\t\treturn counter++;\n\t};\n}\n```","x":2309,"y":2014,"width":300,"height":300},
+		{"id":"8605e6bba36e5d28","type":"text","text":"лексическое окружение","x":2992,"y":894,"width":250,"height":60},
+		{"id":"9d6a783e3303668d","type":"text","text":"```js\n{\n\tvar counter = 0;\n\tthis.prop = value;\n\tthis.skulk = function(){\n\t\treturn this;\n\t};\n\tthis.getCounter = function(){\n\t\treturn counter;\n\t};\n\t\tthis.setCounter = function(){\n\t\treturn counter++;\n\t};\n}\n```","x":2309,"y":1194,"width":300,"height":380},
+		{"id":"35681623fd8172f7","type":"text","text":"лексическое окружение  от туда и берется переменная, которой нету в итоговом объекта","x":2912,"y":1634,"width":250,"height":121},
+		{"id":"387047bd43e96de0","type":"text","text":"ninja.skulk()","x":2349,"y":2480,"width":250,"height":60},
+		{"id":"376d28c346db5ab5","type":"text","text":"контекст функции это объект","x":1720,"y":1934,"width":280,"height":160},
+		{"id":"b7abfd108fa82ffa","type":"text","text":"Стек вызовов или контекст","x":1470,"y":2314,"width":250,"height":280},
+		{"id":"040519ebbcdbdc79","type":"text","text":"ninja","x":1500,"y":2513,"width":190,"height":54},
+		{"id":"396862cfeef6a461","type":"text","text":"объект window  или какой другой в зависимости от платформы исполнения кода","x":2992,"y":80,"width":250,"height":167},
+		{"id":"ed2ffe4784fb79e5","type":"text","text":"Объявление функции ","x":2295,"y":-80,"width":335,"height":50},
+		{"id":"299295dc054e63d9","type":"text","text":"```js\nfunction Ninja(value){\n\tvar counter = 0;\n\tthis.prop = value;\n\tthis.skulk = function(){\n\t\treturn this;\n\t};\n\tthis.getCounter = function(){\n\t\treturn counter;\n\t};\n\t\tthis.setCounter = function(){\n\t\treturn counter++;\n\t};\n}\n```","x":2312,"y":247,"width":300,"height":380}
+	],
+	"edges":[
+		{"id":"d2900a5206da2156","fromNode":"04e1f4eea4c8b8e4","fromSide":"right","toNode":"35681623fd8172f7","toSide":"left"},
+		{"id":"ea189d692cba3fbf","fromNode":"9d6a783e3303668d","fromSide":"bottom","toNode":"04e1f4eea4c8b8e4","toSide":"top","color":"4","label":"5 - Исполнение функции-конструктора"},
+		{"id":"5514e2aae2f45ad5","fromNode":"8605e6bba36e5d28","fromSide":"top","toNode":"396862cfeef6a461","toSide":"bottom"},
+		{"id":"8b0e3e50302fb410","fromNode":"9d6a783e3303668d","fromSide":"right","toNode":"8605e6bba36e5d28","toSide":"left"},
+		{"id":"aba45111fcfc8b2a","fromNode":"299295dc054e63d9","fromSide":"bottom","toNode":"9d6a783e3303668d","toSide":"top","color":"4","label":"4 - запуск функции, \nгенерация объекта высшего порядка\nили блока кода"},
+		{"id":"f247c1cc6630562b","fromNode":"35681623fd8172f7","fromSide":"top","toNode":"9d6a783e3303668d","toSide":"right"},
+		{"id":"1876d740a6a0b942","fromNode":"299295dc054e63d9","fromSide":"right","toNode":"396862cfeef6a461","toSide":"bottom","label":"лексическое окружение"},
+		{"id":"0297def337dc57df","fromNode":"ed2ffe4784fb79e5","fromSide":"bottom","toNode":"299295dc054e63d9","toSide":"top"},
+		{"id":"03b787ae90ba9427","fromNode":"04e1f4eea4c8b8e4","fromSide":"bottom","toNode":"387047bd43e96de0","toSide":"top"},
+		{"id":"4983ae9f44079107","fromNode":"387047bd43e96de0","fromSide":"left","toNode":"04e1f4eea4c8b8e4","toSide":"left","label":"this"},
+		{"id":"0e017847b9b17988","fromNode":"376d28c346db5ab5","fromSide":"right","toNode":"04e1f4eea4c8b8e4","toSide":"left"},
+		{"id":"b1c5e82d0b603fc5","fromNode":"04e1f4eea4c8b8e4","fromSide":"left","toNode":"040519ebbcdbdc79","toSide":"right"}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"77457f04035d9af4","type":"text","text":">[!info] замечание \n>Вызов функции с ключевым словом `new` приводит к созданию нового пустого объекта","x":-785,"y":120,"width":340,"height":180},
+		{"id":"3e71d7f8b9a04e8e","type":"text","text":">[!info] замечание \n>Вновь созданный объект возвращается как значение функции","x":260,"y":-238,"width":340,"height":173},
+		{"id":"339d1c2f7212cd8b","type":"text","text":"ninja1","x":-160,"y":270,"width":120,"height":60},
+		{"id":"1f23d686fabcf513","type":"file","file":"Js ninja secrets/conspects/Функция-конструктор - создание объекта.canvas","x":-300,"y":560,"width":400,"height":400},
+		{"id":"654b78547f537315","type":"text","text":">[!info] замечание \n>Новый пустой объект задаётся в качестве контекста  функции (параметр `this`)","x":-1140,"y":-607,"width":340,"height":180},
+		{"id":"b5c1cac827c828f1","type":"text","text":"```js\nfunction Ninja(){\nthis.skulk = function(){\nreturn this;\n}\n}\nconst ninja1 = new Ninja()\n```","x":-567,"y":-680,"width":300,"height":180},
+		{"id":"5d0d275a3b326450","type":"text","text":">[!info] замечание \n>В новый  объект добавляются свойства (в данном случае метод  `skulk()`)`","x":40,"y":-780,"width":340,"height":173},
+		{"id":"b343b244f1480d42","type":"text","text":"ninja\nskulk: \nfunction(){}","x":-160,"y":-278,"width":120,"height":98},
+		{"id":"dea4e734ef477e7d","type":"text","text":"ninja","x":-710,"y":-151,"width":95,"height":50}
+	],
+	"edges":[
+		{"id":"06e4e6e9c82ef0a8","fromNode":"77457f04035d9af4","fromSide":"top","toNode":"dea4e734ef477e7d","toSide":"bottom","color":"2","label":"1"},
+		{"id":"07c147d510f5be2a","fromNode":"dea4e734ef477e7d","fromSide":"top","toNode":"654b78547f537315","toSide":"bottom","color":"4","label":"2"},
+		{"id":"af52f9f151e4249d","fromNode":"654b78547f537315","fromSide":"right","toNode":"b5c1cac827c828f1","toSide":"left","color":"2","label":"2"},
+		{"id":"0a5d7cab176683ee","fromNode":"3e71d7f8b9a04e8e","fromSide":"left","toNode":"b343b244f1480d42","toSide":"right","color":"4","label":"4"},
+		{"id":"eb498407fec0864b","fromNode":"b5c1cac827c828f1","fromSide":"bottom","toNode":"77457f04035d9af4","toSide":"right","color":"4","label":"1"},
+		{"id":"bed004b6a4f19572","fromNode":"b5c1cac827c828f1","fromSide":"top","toNode":"5d0d275a3b326450","toSide":"left","color":"4","label":"3"},
+		{"id":"4fbabbcf6259695b","fromNode":"b5c1cac827c828f1","fromSide":"right","toNode":"3e71d7f8b9a04e8e","toSide":"top","color":"2","label":"4"},
+		{"id":"039cbb3ae2f659aa","fromNode":"339d1c2f7212cd8b","fromSide":"top","toNode":"b343b244f1480d42","toSide":"bottom","color":"1","label":"Привязка идентификатора к созданному объекту"},
+		{"id":"80dea97adfa1c885","fromNode":"339d1c2f7212cd8b","fromSide":"bottom","toNode":"1f23d686fabcf513","toSide":"top","label":"наглядная карта"},
+		{"id":"0360efd53cd9a7ac","fromNode":"dea4e734ef477e7d","fromSide":"right","toNode":"b343b244f1480d42","toSide":"left","color":"4"},
+		{"id":"d925cb836b364627","fromNode":"5d0d275a3b326450","fromSide":"bottom","toNode":"dea4e734ef477e7d","toSide":"top","color":"2","label":"3"}
+	]
+}

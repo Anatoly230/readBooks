@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"b8cc001aa67bbca1","x":-5470,"y":-5472,"width":2970,"height":2824,"type":"group","label":"Отображение в коде"},
+		{"id":"3c5869552d51df50","x":-5480,"y":-2000,"width":3160,"height":2440,"type":"group","label":"Схематичное отображение"},
+		{"id":"0629d3f96fb91bc3","type":"group","x":-3040,"y":-5120,"width":520,"height":2393,"label":"Environment"},
+		{"id":"dfcc0cb731c76555","type":"group","x":-5329,"y":-1080,"width":520,"height":1020,"label":"code"},
+		{"id":"95de0e1189713f33","type":"group","x":-5269,"y":-700,"width":400,"height":528,"color":"4","label":"Skulk"},
+		{"id":"04091f79a5e5142e","type":"group","x":-5214,"y":-380,"width":290,"height":121,"color":"4","label":"report"},
+		{"id":"9bf83b64b9121d71","type":"text","text":"```js\n    var ninja = \"Muneyoshi\";\n\n  \n\n    function skulk() {\n\n      var action = 'Skulking';\n\n  \n\n      function report() {\n\n        var intro = 'Aha!'\n\n        console.log(`report! intro :${intro}, action :${action}, ninja :${ninja}`);\n\n      }\n\n      report();\n\n        var intro = !intro?'not defined':intro;\n\n        console.log(`skulk! intro :${intro}, action :${action}, ninja :${ninja}`);\n\n  \n\n    }\n\n    skulk();\n\n  \n\n      var intro = !intro?'not defined':intro;\n\n      var action = !action?'not defined':action;\n\n    console.log(`global! intro :${intro}, action :${action}, ninja :${ninja}`);\n```","x":-5450,"y":-4933,"width":900,"height":840},
+		{"id":"0e8a136318bb69ac","type":"text","text":"skulk funciton\n\n```js\n   function skulk() {\n\n      var action = 'Skulking';\n\n  \n\n      function report() {\n\n        var intro = 'Aha!'\n\n        console.log(`report! intro :${intro}, action :${action}, ninja :${ninja}`);\n\n      }\n\n      report();\n\n        var intro = !intro?'not defined':intro;\n\n        console.log(`skulk! intro :${intro}, action :${action}, ninja :${ninja}`);\n\n  \n\n    }\n\n```","x":-5450,"y":-3853,"width":900,"height":580},
+		{"id":"6329c75b9aca09a1","type":"text","text":"report funciton\n\n```js\n      function report() {\n\n        var intro = 'Aha!'\n\n        console.log(`report! intro :${intro}, action :${action}, ninja :${ninja}`);\n\n      }\n\n```","x":-5450,"y":-2973,"width":900,"height":305},
+		{"id":"63d68a26a2d7e4cf","type":"text","text":"общий код","x":-5125,"y":-5452,"width":250,"height":60},
+		{"id":"6af4c513b3a89fa4","type":"text","text":"Global \n\n```js\nninja\nskulk\n```","x":-3020,"y":-4619,"width":480,"height":138},
+		{"id":"61fc39aaa93e7edb","type":"text","text":"```js\naction\nreport\n```","x":-3010,"y":-3603,"width":461,"height":145},
+		{"id":"c97bf8c04f6d35f2","type":"text","text":"```js\nintro\n```","x":-3010,"y":-2892,"width":461,"height":145},
+		{"id":"08a8657707c2f21f","type":"text","text":"null","x":-2905,"y":-5100,"width":250,"height":60},
+		{"id":"84e4f7d48e8f04dd","type":"text","text":"Глобальный код","x":-5194,"y":-1220,"width":250,"height":50},
+		{"id":"85ce26bdf25e5b44","type":"text","text":"ninja","x":-5194,"y":-900,"width":250,"height":60,"color":"1"},
+		{"id":"15e145b15d35d49f","type":"text","text":"action","x":-5194,"y":-620,"width":250,"height":60,"color":"1"},
+		{"id":"2f5a6bf14cb038d9","type":"text","text":"intro","x":-5194,"y":-350,"width":250,"height":51,"color":"1"},
+		{"id":"624387720f2e3583","type":"text","text":"```js\nintro\n```","x":-2885,"y":124,"width":461,"height":132},
+		{"id":"a3253015e7dc9c54","type":"text","text":"null","x":-4760,"y":-1840,"width":250,"height":60},
+		{"id":"2993b9267ca927a9","type":"text","text":"```js\naction\nreport\n```","x":-3560,"y":-560,"width":461,"height":100},
+		{"id":"8039ef043469f6e6","type":"text","text":"Global \n\n```js\nninja\nskulk\n```","x":-4200,"y":-1040,"width":480,"height":140}
+	],
+	"edges":[
+		{"id":"8c7a7a101d97b149","fromNode":"63d68a26a2d7e4cf","fromSide":"bottom","toNode":"9bf83b64b9121d71","toSide":"top"},
+		{"id":"07c8f8783522d2ef","fromNode":"9bf83b64b9121d71","fromSide":"right","toNode":"6af4c513b3a89fa4","toSide":"left","label":"Лексическое среда"},
+		{"id":"bb3885203e4071d6","fromNode":"0e8a136318bb69ac","fromSide":"right","toNode":"61fc39aaa93e7edb","toSide":"left","label":"Лексическое среда"},
+		{"id":"9ac7daaddc93d798","fromNode":"6329c75b9aca09a1","fromSide":"right","toNode":"c97bf8c04f6d35f2","toSide":"left","label":"Лексическое среда"},
+		{"id":"a8fb8da0f325823a","fromNode":"6af4c513b3a89fa4","fromSide":"top","toNode":"08a8657707c2f21f","toSide":"bottom","label":"Environmet"},
+		{"id":"6b0cf6fb3dad510e","fromNode":"dfcc0cb731c76555","fromSide":"right","toNode":"8039ef043469f6e6","toSide":"left","label":"Лексическое среда"},
+		{"id":"3cdf133153e36631","fromNode":"95de0e1189713f33","fromSide":"right","toNode":"2993b9267ca927a9","toSide":"left","label":"Лексическое среда"},
+		{"id":"90a1ab0387273105","fromNode":"04091f79a5e5142e","fromSide":"right","toNode":"624387720f2e3583","toSide":"left","label":"Лексическое среда"},
+		{"id":"0c7235b3b37cb31b","fromNode":"84e4f7d48e8f04dd","fromSide":"bottom","toNode":"dfcc0cb731c76555","toSide":"top"},
+		{"id":"8ee46821f77781a7","fromNode":"04091f79a5e5142e","fromSide":"right","toNode":"2993b9267ca927a9","toSide":"bottom","label":"Environment"},
+		{"id":"698d0350596b0f5f","fromNode":"95de0e1189713f33","fromSide":"right","toNode":"8039ef043469f6e6","toSide":"bottom","label":"Environment"},
+		{"id":"b4fba296ae8bcb14","fromNode":"dfcc0cb731c76555","fromSide":"right","toNode":"a3253015e7dc9c54","toSide":"bottom","label":"Environment"}
+	]
+}

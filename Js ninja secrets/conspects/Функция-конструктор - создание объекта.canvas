@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"4008b994148f22f2","type":"text","text":"```js\nnew Ninja()\n```","x":-1620,"y":-556,"width":300,"height":85},
+		{"id":"80ec16b32caee885","type":"text","text":"```js\nconst ninja1\n```","x":-2200,"y":-570,"width":300,"height":99},
+		{"id":"bbdc956da8732de0","type":"text","text":"```js\n{\nprop = value;\nskulk = function(){\n\t\treturn this;\n\t};\ngetCounter = function(){\n\t\treturn counter;\n\t};\nsetCounter = function(){\n\t\treturn counter++;\n\t};\n}\n```","x":205,"y":1510,"width":300,"height":300},
+		{"id":"eee9ba7f90618bf5","type":"text","text":"лексическое окружение","x":888,"y":390,"width":250,"height":60},
+		{"id":"7ce7177beecaa3e9","type":"text","text":"```js\n{\n\tvar counter = 0;\n\tthis.prop = value;\n\tthis.skulk = function(){\n\t\treturn this;\n\t};\n\tthis.getCounter = function(){\n\t\treturn counter;\n\t};\n\t\tthis.setCounter = function(){\n\t\treturn counter++;\n\t};\n}\n```","x":205,"y":690,"width":300,"height":380},
+		{"id":"256710aa944a1e13","type":"text","text":"лексическое окружение  от туда и берется переменная, которой нету в итоговом объекта","x":808,"y":1130,"width":250,"height":121},
+		{"id":"cc8484c34a70cf03","type":"text","text":"```js\nfunction Ninja(value){\n\tvar counter = 0;\n\tthis.prop = value;\n\tthis.skulk = function(){\n\t\treturn this;\n\t};\n\tthis.getCounter = function(){\n\t\treturn counter;\n\t};\n\t\tthis.setCounter = function(){\n\t\treturn counter++;\n\t};\n}\n```","x":208,"y":-796,"width":300,"height":380},
+		{"id":"e28d925599967116","type":"text","text":"объект window  или какой другой в зависимости от платформы исполнения кода","x":888,"y":-879,"width":250,"height":167},
+		{"id":"ba46f1aa5c561b9b","type":"text","text":"```js\n{}\n```","x":-1150,"y":880,"width":300,"height":112},
+		{"id":"408cb3b367b8da90","type":"text","text":"Ninja.prototype","x":-670,"y":-49,"width":250,"height":60},
+		{"id":"0eac49c44a197ff7","type":"text","text":"Function","x":801,"y":-1452,"width":250,"height":60},
+		{"id":"94a4167bc5cce331","type":"text","text":"Объявление функции ","x":-240,"y":-1392,"width":335,"height":60},
+		{"id":"acd8fbb8f59fcde3","x":-420,"y":-376,"width":250,"height":60,"type":"text","text":"constructor Ninja"},
+		{"id":"a5068143e5a97643","type":"text","text":"Object prototype","x":-860,"y":-346,"width":250,"height":50},
+		{"id":"979cde836eeda208","x":-100,"y":-215,"width":250,"height":196,"type":"text","text":"При объявлении любой функции (независимо просто или конструктор объекта), автоматически генерируется объект прототип функции "}
+	],
+	"edges":[
+		{"id":"2d32b900733dc2b2","fromNode":"80ec16b32caee885","fromSide":"right","toNode":"4008b994148f22f2","toSide":"left","color":"4","label":"1 - назначение"},
+		{"id":"7e6c2be53272880f","fromNode":"4008b994148f22f2","fromSide":"right","toNode":"cc8484c34a70cf03","toSide":"left","color":"4","label":"3 - вызов функции констрктора"},
+		{"id":"fc5be63115191155","fromNode":"cc8484c34a70cf03","fromSide":"bottom","toNode":"7ce7177beecaa3e9","toSide":"top","color":"4","label":"4 - запуск функции, \nгенерация объекта высшего порядка\nили блока кода"},
+		{"id":"2a8e225c8fb3f9cb","fromNode":"4008b994148f22f2","fromSide":"right","toNode":"ba46f1aa5c561b9b","toSide":"left","color":"4","label":"2 - генерация нового объекта, \nчерез оператор new "},
+		{"id":"effee9e3a1b6a68a","fromNode":"cc8484c34a70cf03","fromSide":"right","toNode":"e28d925599967116","toSide":"bottom","label":"лексическое окружение"},
+		{"id":"f047d0642cb5a55b","fromNode":"7ce7177beecaa3e9","fromSide":"right","toNode":"eee9ba7f90618bf5","toSide":"left"},
+		{"id":"3dbe08d08046a134","fromNode":"eee9ba7f90618bf5","fromSide":"top","toNode":"e28d925599967116","toSide":"bottom"},
+		{"id":"e87e2763e549857d","fromNode":"7ce7177beecaa3e9","fromSide":"left","toNode":"ba46f1aa5c561b9b","toSide":"right","label":"контекст this"},
+		{"id":"19c0f48d0ac88434","fromNode":"ba46f1aa5c561b9b","fromSide":"bottom","toNode":"bbdc956da8732de0","toSide":"left","label":"трансформация объекта"},
+		{"id":"607cc498a03f6b91","fromNode":"7ce7177beecaa3e9","fromSide":"bottom","toNode":"bbdc956da8732de0","toSide":"top","color":"4","label":"5 - Исполнение функции-конструктора"},
+		{"id":"5474d7db5919e551","fromNode":"bbdc956da8732de0","fromSide":"right","toNode":"256710aa944a1e13","toSide":"left"},
+		{"id":"5ecf163a099f67f0","fromNode":"256710aa944a1e13","fromSide":"top","toNode":"7ce7177beecaa3e9","toSide":"right"},
+		{"id":"5316278142526eb0","fromNode":"ba46f1aa5c561b9b","fromSide":"top","toNode":"408cb3b367b8da90","toSide":"bottom","label":"назначение прототипа объекта"},
+		{"id":"adbe01ec901602d3","fromNode":"94a4167bc5cce331","fromSide":"bottom","toNode":"cc8484c34a70cf03","toSide":"top"},
+		{"id":"f7291a35b686ade2","fromNode":"979cde836eeda208","fromSide":"left","toNode":"408cb3b367b8da90","toSide":"right","label":"прототип"},
+		{"id":"9839179b1bbf488d","fromNode":"408cb3b367b8da90","fromSide":"top","toNode":"a5068143e5a97643","toSide":"bottom","label":"prototype"},
+		{"id":"65b970b3b1bfec56","fromNode":"cc8484c34a70cf03","fromSide":"top","toNode":"0eac49c44a197ff7","toSide":"bottom","label":"constructor"},
+		{"id":"0c2a6f51ea211452","fromNode":"408cb3b367b8da90","fromSide":"top","toNode":"acd8fbb8f59fcde3","toSide":"bottom","label":"constructor"},
+		{"id":"b523dc3c4bf9aa92","fromNode":"acd8fbb8f59fcde3","fromSide":"right","toNode":"cc8484c34a70cf03","toSide":"left"},
+		{"id":"08d827e111b18b31","fromNode":"cc8484c34a70cf03","fromSide":"bottom","toNode":"979cde836eeda208","toSide":"right"}
+	]
+}
