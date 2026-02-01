@@ -224,56 +224,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "floating": {
-    "id": "6e1c3eec3ac303f0",
-    "type": "floating",
-    "children": [
-      {
-        "id": "f0cf946945e8176d",
-        "type": "window",
-        "children": [
-          {
-            "id": "f1f64fabb80813c9",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "861706d471de4e0c",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
-                    "viewState": {
-                      "x": 5088.268788036567,
-                      "y": -898.3423160094487,
-                      "zoom": -3.695709701687985
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "Тренировка"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 256,
-        "y": 8,
-        "width": 1024,
-        "height": 800,
-        "maximize": true,
-        "zoom": 0.5
-      }
-    ]
-  },
   "active": "ad1d39803eb83e38",
   "lastOpenFiles": [
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Область видимости имени функции.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
     "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
     "Untitled.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
