@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Цепочка областей видимости"
+              "title": "4. Глобальная область видимости"
             }
           },
           {
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 3. Цепочка областей видимости"
+              "title": "Backlinks for 4. Глобальная область видимости"
             }
           },
           {
@@ -186,13 +186,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 3. Цепочка областей видимости"
+              "title": "Outline of 4. Глобальная область видимости"
             }
           },
           {
@@ -210,7 +210,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 220.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,6 +228,7 @@
   "active": "c25eff22105a0ebd",
   "lastOpenFiles": [
     "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
     "{YDKJSY}Знакомьтесь js/src/Познакомьтесь,_JavaScript_2_е_изд.pdf",
@@ -273,7 +275,6 @@
     "Js ninja secrets/conspects/Создание объекта и лексическое окружение.canvas",
     "заметки_наблюдения_/наблюдение.md",
     "заметки_наблюдения_/Падший ангел.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Последовательность изучения.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/задания/Untitled.md"
+    "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Последовательность изучения.md"
   ]
 }
