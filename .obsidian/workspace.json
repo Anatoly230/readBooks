@@ -11,17 +11,14 @@
             "id": "c25eff22105a0ebd",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
-                "viewState": {
-                  "x": 10071,
-                  "y": 1760,
-                  "zoom": -4
-                }
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Движок-компилятор-область видимости"
+              "icon": "lucide-file",
+              "title": "5 (Не такой уж) тайный жизненный цикл переменных"
             }
           },
           {
@@ -36,7 +33,8 @@
               "title": "Область_видимости_и_замыкания_2_е_изд."
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -179,8 +177,8 @@
                 "showSearch": false,
                 "searchQuery": ""
               },
-              "icon": "lucide-archive",
-              "title": "All properties"
+              "icon": "lucide-ghost",
+              "title": "all-properties"
             }
           },
           {
@@ -230,34 +228,38 @@
   },
   "active": "a491e4796b7eba8c",
   "lastOpenFiles": [
+    "images/Pasted image 20260130195114.png",
+    "images/Pasted image 20260129215522.png",
+    "images/Pasted image 20260123161952.png",
+    "images/Pasted image 20260120132510.png",
+    "images/Pasted image 20260120132429.png",
+    "images",
+    "imfges/Pasted image 20260130195114.png",
+    "imfges/Pasted image 20260129215522.png",
+    "imfges/Pasted image 20260123161952.png",
+    "imfges/Pasted image 20260120132510.png",
+    "imfges/Pasted image 20260120132429.png",
+    "imfges",
+    "imgs/Pasted image 20260130195114.png",
+    "imgs",
+    "Новая папка",
+    "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
     "git для проф программиста/concepts",
     "git для проф программиста/Новая папка",
     "git для проф программиста/src/Git_dlya_professionalnogo_programmista.pdf",
     "git для проф программиста/src",
     "git для проф программиста",
-    "Новая папка",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Область видимости имени функции.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости — копия.md",
-    "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
-    "{YDKJSY}Знакомьтесь js/src/Познакомьтесь,_JavaScript_2_е_изд.pdf",
-    "Js ninja secrets/src/Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
-    "Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
-    "123.pdf",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
-    "Pasted image 20260130195114.png",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Untitled.md",
-    "Точечный рисунок.bmp",
-    "Pasted image 20260129215522.png",
     "Js ninja secrets/conspects/TDZ  let const class.md",
-    "Pasted image 20260120132429.png",
-    "Pasted image 20260120132510.png",
-    "Pasted image 20260123161952.png",
     "ECMASCRIPT/9. Исполняемый код и контексты выполнения.md",
     "ECMASCRIPT/Терминология.md",
     "ThisMode.md",
