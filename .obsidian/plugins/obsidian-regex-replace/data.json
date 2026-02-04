@@ -1,6 +1,6 @@
 {
-  "findText": "\\n",
-  "replaceText": " ",
+  "findText": "(?<!`|\\.)js(?!`)",
+  "replaceText": "`JS`",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": true,
