@@ -4,25 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "6fe1868e17662ed4",
+        "id": "f9ad701e990ec590",
         "type": "tabs",
         "children": [
           {
-            "id": "ad1d39803eb83e38",
+            "id": "c25eff22105a0ebd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/7. Использование замыканий.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 (Не такой уж) тайный жизненный цикл переменных"
+              "title": "7. Использование замыканий"
             }
           },
           {
-            "id": "ebf5bfbb75b7dfc9",
+            "id": "11f68b87d2f77c06",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -46,7 +46,7 @@
       {
         "id": "0ff5f71e41889867",
         "type": "tabs",
-        "dimension": 67.09401709401709,
+        "dimension": 80.31496062992126,
         "children": [
           {
             "id": "a491e4796b7eba8c",
@@ -93,7 +93,7 @@
       {
         "id": "df09d241d2efdb8a",
         "type": "tabs",
-        "dimension": 32.9059829059829,
+        "dimension": 19.68503937007874,
         "children": [
           {
             "id": "456f7e00ffaf7422",
@@ -109,7 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5110321044922
+    "width": 478.5086555480957
   },
   "right": {
     "id": "da29d409c77516e6",
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Область_видимости_и_замыкания_2_е_изд."
+              "title": "Backlinks for Движок-компилятор-область видимости"
             }
           },
           {
@@ -187,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 3. Цепочка областей видимости"
+              "title": "Outline of Движок-компилятор-область видимости"
             }
           },
           {
@@ -211,7 +211,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 220.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -226,40 +226,40 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad1d39803eb83e38",
+  "active": "c25eff22105a0ebd",
   "lastOpenFiles": [
     "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/7. Использование замыканий.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/6. Ограничение раскрытия областей видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5. (Не такой уж) тайный жизненный цикл переменных.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
     "images/Pasted image 20260130195114.png",
     "images/Pasted image 20260129215522.png",
     "images/Pasted image 20260123161952.png",
     "images/Pasted image 20260120132510.png",
     "images/Pasted image 20260120132429.png",
     "images",
-    "Untitled.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
+    "imfges/Pasted image 20260130195114.png",
+    "imfges/Pasted image 20260129215522.png",
+    "imfges/Pasted image 20260123161952.png",
+    "imfges/Pasted image 20260120132510.png",
+    "imfges/Pasted image 20260120132429.png",
+    "imfges",
+    "imgs",
+    "Новая папка",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
+    "git для проф программиста/concepts",
+    "git для проф программиста/Новая папка",
+    "git для проф программиста/src/Git_dlya_professionalnogo_programmista.pdf",
+    "git для проф программиста/src",
+    "git для проф программиста",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Область видимости имени функции.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости — копия.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
-    "Untitled 1.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
-    "{YDKJSY}Знакомьтесь js/src/Познакомьтесь,_JavaScript_2_е_изд.pdf",
-    "Js ninja secrets/src/Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
-    "Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
-    "123.pdf",
-    "Функциональное программирование/src/Функциональное программирование на js - как улучшить код.pdf",
-    "Pasted image 20260130195114.png",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Untitled.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы",
-    "SQL/src/SQL_для_анализа_данных.pdf",
-    "SQL/src/123.pdf",
-    "Точечный рисунок.bmp",
-    "Pasted image 20260129215522.png",
     "Js ninja secrets/conspects/TDZ  let const class.md",
-    "Pasted image 20260120132429.png",
-    "Pasted image 20260120132510.png",
     "ECMASCRIPT/9. Исполняемый код и контексты выполнения.md",
     "ECMASCRIPT/Терминология.md",
     "ThisMode.md",
@@ -274,13 +274,13 @@
     "Js ninja secrets/conspects/Lexical environment  и Environment - РАЗЛИЧИЯ.md",
     "Js ninja secrets/conspects/функция от объявления до исполнения.md",
     "Js ninja secrets/conspects/Регистрация идентификаторов в лексических средах.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
     "Js ninja secrets/conspects/Области видимости переменных или лексическое окружение.md",
     "Js ninja secrets/conspects/Лексическое окружение и внутреннее свойство Enviroment.canvas",
     "Js ninja secrets/conspects/Механизм создания объекта при помощи конструткора.canvas",
     "Js ninja secrets/conspects/Функция-конструктор - создание объекта.canvas",
-    "Js ninja secrets/conspects/IIFO - немедленно вызываемое функциональное выражени.md",
     "Js ninja secrets/conspects/создание объекта и лексичское окружение.canvas",
-    "Js ninja secrets/conspects/Создание объекта и лексическое окружение.canvas",
-    "заметки_наблюдения_/наблюдение.md"
+    "Js ninja secrets/conspects/Создание объекта и лексическое окружение.canvas"
   ]
 }
