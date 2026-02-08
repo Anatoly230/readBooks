@@ -1,4 +1,5 @@
 [
   "obsidian-regex-replace",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-plugin-toc"
 ]

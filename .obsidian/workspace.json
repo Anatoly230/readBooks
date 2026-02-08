@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/6. Ограничение раскрытия областей видимости.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 (Не такой уж) тайный жизненный цикл переменных"
+              "title": "6. Ограничение раскрытия областей видимости"
             }
           },
           {
@@ -108,7 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5110321044922
+    "width": 282.5110321044922
   },
   "right": {
     "id": "da29d409c77516e6",
@@ -227,22 +227,27 @@
   },
   "active": "ad1d39803eb83e38",
   "lastOpenFiles": [
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/7. Использование замыканий.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/6. Ограничение раскрытия областей видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5. (Не такой уж) тайный жизненный цикл переменных.md",
     "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости — копия.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
+    "Untitled.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Содержание.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
     "images/Pasted image 20260130195114.png",
     "images/Pasted image 20260129215522.png",
     "images/Pasted image 20260123161952.png",
     "images/Pasted image 20260120132510.png",
     "images/Pasted image 20260120132429.png",
     "images",
-    "Untitled.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Область видимости имени функции.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
     "Untitled 1.md",
     "{YDKJSY}Знакомьтесь js/src/Познакомьтесь,_JavaScript_2_е_изд.pdf",
     "Js ninja secrets/src/Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
@@ -271,15 +276,10 @@
     "Js ninja secrets/conspects/Execution context.md",
     "Js ninja secrets/conspects/Вызов функции как constructor.md",
     "Js ninja secrets/conspects/Lexical environment  и Environment - РАЗЛИЧИЯ.md",
-    "Js ninja secrets/conspects/функция от объявления до исполнения.md",
-    "Js ninja secrets/conspects/Регистрация идентификаторов в лексических средах.md",
-    "Js ninja secrets/conspects/Области видимости переменных или лексическое окружение.md",
     "Js ninja secrets/conspects/Лексическое окружение и внутреннее свойство Enviroment.canvas",
     "Js ninja secrets/conspects/Механизм создания объекта при помощи конструткора.canvas",
     "Js ninja secrets/conspects/Функция-конструктор - создание объекта.canvas",
-    "Js ninja secrets/conspects/IIFO - немедленно вызываемое функциональное выражени.md",
     "Js ninja secrets/conspects/создание объекта и лексичское окружение.canvas",
-    "Js ninja secrets/conspects/Создание объекта и лексическое окружение.canvas",
-    "заметки_наблюдения_/наблюдение.md"
+    "Js ninja secrets/conspects/Создание объекта и лексическое окружение.canvas"
   ]
 }
