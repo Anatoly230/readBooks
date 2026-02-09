@@ -1,6 +1,6 @@
 {
-  "findText": "(?<!`|\\.)js(?!`)",
-  "replaceText": "",
+  "findText": "\\w+(?<=\\s)var(?=\\s)\\w?",
+  "replaceText": "`var`",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": true,
