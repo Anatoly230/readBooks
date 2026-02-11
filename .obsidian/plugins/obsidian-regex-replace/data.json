@@ -1,10 +1,10 @@
 {
-  "findText": "\\w+(?<=\\s)var(?=\\s)\\w?",
-  "replaceText": "`var`",
+  "findText": "- ",
+  "replaceText": "",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": true,
-  "processLineBreak": false,
+  "processLineBreak": true,
   "processTab": false,
   "prefillFind": false
 }
