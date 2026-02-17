@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"9a899310eca9a418","x":1360,"y":-1840,"width":1440,"height":2320,"type":"group","label":"Предполагаемые области видимости"},
+		{"id":"d3d1e764bea067b2","type":"text","text":"```js\nfunction whatsTheDealHere(id,defaultID = () => id) {\n    var id;\n\n    console.log(`local variable 'id': ${ id }`);\n    console.log(\n        `parameter 'id' (closure): ${ defaultID() }`\n    );\n\n    console.log(\"reassigning 'id' to 5\");\n    id = 5;\n\n    console.log(`local variable 'id': ${ id }`);\n    console.log(\n        `parameter 'id' (closure): ${ defaultID() }`\n    );\n}\nwhatsTheDealHere(3)\n```","x":1440,"y":-820,"width":585,"height":435},
+		{"id":"20be53b25b53703e","type":"text","text":"whatsTheDealHere: function","x":1483,"y":-41,"width":250,"height":115},
+		{"id":"93f1522aafdfff62","type":"text","text":"parametrs\nid:\ndefaultID: function","x":2060,"y":-241,"width":250,"height":165},
+		{"id":"96e44338877828c7","type":"text","text":"id","x":2025,"y":74,"width":250,"height":166},
+		{"id":"dc3b1c6e3da3be9d","type":"text","text":"`return id`","x":2460,"y":-204,"width":250,"height":86},
+		{"id":"04852038cf53aeda","type":"text","text":"```js\nfunction whatsTheDealHere(id,defaultID = () => id) {\n    var id = 5;\n    console.log( defaultID() );\n}\n\nwhatsTheDealHere(3);\n// 3\n```","x":1440,"y":-1680,"width":585,"height":220},
+		{"id":"960fce8d7270116b","type":"text","text":"whatsTheDealHere: function","x":1483,"y":-1220,"width":250,"height":80},
+		{"id":"d806206780d356f1","type":"text","text":"id","x":2025,"y":-1140,"width":250,"height":60},
+		{"id":"065471b54805ca17","type":"text","text":"parametrs\nid:\ndefaultID: function","x":2060,"y":-1360,"width":250,"height":115},
+		{"id":"713e567309dd3698","type":"text","text":"`return id`","x":2460,"y":-1334,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"bc9a1695ab7f4f06","fromNode":"960fce8d7270116b","fromSide":"top","toNode":"04852038cf53aeda","toSide":"bottom"},
+		{"id":"fdb0bf02a07f9c5d","fromNode":"960fce8d7270116b","fromSide":"right","toNode":"065471b54805ca17","toSide":"left"},
+		{"id":"4b9af576044ce641","fromNode":"960fce8d7270116b","fromSide":"right","toNode":"d806206780d356f1","toSide":"left"},
+		{"id":"7a7b3043a6720b55","fromNode":"065471b54805ca17","fromSide":"right","toNode":"713e567309dd3698","toSide":"left"},
+		{"id":"ef0d72daf2ed8a55","fromNode":"713e567309dd3698","fromSide":"top","toNode":"065471b54805ca17","toSide":"top"},
+		{"id":"e8a298463ce1d102","fromNode":"20be53b25b53703e","fromSide":"top","toNode":"d3d1e764bea067b2","toSide":"bottom"},
+		{"id":"0b9648b28d1eb89d","fromNode":"20be53b25b53703e","fromSide":"right","toNode":"93f1522aafdfff62","toSide":"left"},
+		{"id":"cb7c74e25db96f55","fromNode":"20be53b25b53703e","fromSide":"right","toNode":"96e44338877828c7","toSide":"left"},
+		{"id":"35799593adf7cace","fromNode":"93f1522aafdfff62","fromSide":"right","toNode":"dc3b1c6e3da3be9d","toSide":"left"},
+		{"id":"092ae7e25bcb386d","fromNode":"96e44338877828c7","fromSide":"top","toNode":"93f1522aafdfff62","toSide":"bottom"},
+		{"id":"a4c30b1e5809b2a0","fromNode":"dc3b1c6e3da3be9d","fromSide":"top","toNode":"93f1522aafdfff62","toSide":"top"},
+		{"id":"cd562c95f4b94563","fromNode":"d806206780d356f1","fromSide":"top","toNode":"065471b54805ca17","toSide":"bottom"}
+	]
+}

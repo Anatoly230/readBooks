@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"b9896378886580c3","type":"group","x":-360,"y":60,"width":580,"height":1022,"label":"Modul - function scouoe"},
+		{"id":"74bedb5d0e8955b9","type":"text","text":"```js\npublicApi\n```","x":200,"y":1240,"width":250,"height":80},
+		{"id":"0c12a252198a4c06","type":"text","text":"```js\n    var records = [\n        { id: 14, name: \"Kyle\", grade: 86 },\n        { id: 73, name: \"Suzy\", grade: 87 },\n        { id: 112, name: \"Frank\", grade: 75 },\n        { id: 6, name: \"Sarah\", grade: 91 }\n    ]\n```","x":-310,"y":100,"width":480,"height":200},
+		{"id":"0d814fe9f44f7f3c","type":"text","text":"```js\nvar Student = (function defineStudent(){\n    var records = [\n        { id: 14, name: \"Kyle\", grade: 86 },\n        { id: 73, name: \"Suzy\", grade: 87 },\n        { id: 112, name: \"Frank\", grade: 75 },\n        { id: 6, name: \"Sarah\", grade: 91 }\n    ];\n\n    var publicAPI = {\n        getName\n    };\n\n    return publicAPI;\n\n    // ************************\n\n    function getName(studentID) {\n        var student = records.find(\n            student => student.id == studentID\n        );\n        return student.name;\n    }\n})();\n```","x":-1000,"y":-920,"width":480,"height":600},
+		{"id":"e82c81c195792b51","type":"text","text":"Environment\n\n`lexical environment`","x":-160,"y":-1240,"width":250,"height":100},
+		{"id":"b59be4578feffeeb","type":"text","text":"```js\nfunction getName(studentID) {\n        var student = records.find(\n            student => student.id == studentID\n        );\n        return student.name;\n    }\n}\n```","x":-310,"y":394,"width":480,"height":200},
+		{"id":"2f3b76892443ee24","type":"text","text":"```js\nvar publicAPI = {\n        getName\n    };\n\n```","x":-310,"y":680,"width":480,"height":166},
+		{"id":"c6fa24248743ca2e","type":"text","text":"return   `publicApi`","x":-195,"y":960,"width":250,"height":60},
+		{"id":"4d2b89f07b0d6898","x":-1077,"y":-1520,"width":634,"height":280,"type":"text","text":"![[8. Паттерн МОДУЛЬ#^b8cbf0]]\n\n![[8. Паттерн МОДУЛЬ#^5b1816]]\n\n![[8. Паттерн МОДУЛЬ#^4ee212]]\n"}
+	],
+	"edges":[
+		{"id":"b75ef0f5639f0f2c","fromNode":"b9896378886580c3","fromSide":"right","toNode":"e82c81c195792b51","toSide":"right"},
+		{"id":"b1230d2ef07dd992","fromNode":"0d814fe9f44f7f3c","fromSide":"bottom","toNode":"b9896378886580c3","toSide":"left"},
+		{"id":"6a99af07fcf21ac1","fromNode":"0d814fe9f44f7f3c","fromSide":"right","toNode":"e82c81c195792b51","toSide":"left"},
+		{"id":"6a2f1ea956dc34d4","fromNode":"b9896378886580c3","fromSide":"bottom","toNode":"74bedb5d0e8955b9","toSide":"left"},
+		{"id":"82a50674db67736e","fromNode":"b59be4578feffeeb","fromSide":"top","toNode":"0c12a252198a4c06","toSide":"bottom","label":"records"},
+		{"id":"7afb626173794e00","fromNode":"2f3b76892443ee24","fromSide":"top","toNode":"b59be4578feffeeb","toSide":"bottom","label":"getName"},
+		{"id":"dfcd49aff54a0030","fromNode":"c6fa24248743ca2e","fromSide":"top","toNode":"2f3b76892443ee24","toSide":"bottom","label":"publicApi"},
+		{"id":"4f2ba827cd5c0ad3","fromNode":"0d814fe9f44f7f3c","fromSide":"top","toNode":"4d2b89f07b0d6898","toSide":"bottom"}
+	]
+}

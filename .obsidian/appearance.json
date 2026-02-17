@@ -1,4 +1,5 @@
 {
-  "cssTheme": "Obsidian Nord",
-  "theme": "obsidian"
+  "cssTheme": "Obsidian gruvbox",
+  "theme": "moonstone",
+  "accentColor": "#8959f7"
 }

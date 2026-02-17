@@ -1,6 +1,6 @@
 {
-  "findText": "- ",
-  "replaceText": "",
+  "findText": "(?<!`)(?<!\\.)js(?!`|[A-Z])",
+  "replaceText": "`js`",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": true,
