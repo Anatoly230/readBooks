@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"6fa61245947db2ba","x":-145,"y":-120,"width":290,"height":320,"type":"group","label":"Environment Record "},
+		{"id":"4bd79e24c25cdc0a","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"`Environment Record`"},
+		{"id":"569676f2c43dfa52","type":"text","text":"`OuterEnv: null `","x":-125,"y":-100,"width":250,"height":60}
+	],
+	"edges":[]
+}

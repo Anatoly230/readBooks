@@ -1,4 +1,4 @@
-var russiaCitys = {
+var russiaСities = {
     "Абаза": {
         "region": "Хакасия",
         "federalDistrict": "Сибирский",
@@ -8847,11 +8847,60 @@ var russiaCitys = {
         "cityStatus": "1940",
         "formerName": "Суровцево, посёлок Покровской мануфактуры"
     }
-}
+};
 
-var moscow = {}
-var counter = 0;
-for (let city in russiaCitys) {
-    if (russiaCitys[city].region === "Московская область") moscow[city] = russiaCitys[city]
+function startCityzen(cities, attemptCount = 3) {
+    if (!cities) {
+        console.log('Введите базу городов, в которые планируете играть)')
+        return startCityzen;
+    }
+
+    var lastWord;
+    var firstLetter;
+    var lastletter;
+    var cache = {};
+    var guide = Object
+        .keys(cities)
+        .reduce(getGuideFromArrayValues, {});
+
+    return function citySearcher(city, info) {
+        if (info) return cities[city];
+        lastWord = !lastWord ? city : lastWord;
+        firstLetter = city[0];
+
+        if (cache[city]) {
+            attemptCount--;
+            return `Город уже был назван \n Можете попробовать ещё ${attemptCount} раз`;
+        }
+        if (!guide[firstLetter][city] && attemptCount) {
+            attemptCount--;
+            return `Такого города нету(\n Можете попробовать ещё ${attemptCount} раз`;
+        }
+        if (!attemptCount) return 'Ваши попытки завершились, начните игру заново(';
+
+        cache[city] = 'user';
+        lastletter = guide[firstLetter][city];
+        delete guide[firstLetter][city];
+
+
+        for (const c in guide[firstLetter]) {
+            city = c;
+            break;
+        }
+
+        cache[city] = 'comp';
+        return city;
+    }
+
+    function getGuideFromArrayValues(acc, word) {
+        var firstLetter = word[0];
+        var lastLetter = word[word.length - 1];
+        if (!acc[firstLetter]) acc[firstLetter] = {};
+        acc[firstLetter][word] = lastLetter;
+        return acc;
+    }
+
 }
-console.log(Object.entries(russiaCitys).sort(function alphaBetic(a, b) { return b[1]['region'] - a[1]['region'] }))
+var test = startCityzen(russiaСities);
+
+
