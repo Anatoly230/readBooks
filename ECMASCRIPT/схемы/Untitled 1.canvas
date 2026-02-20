@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"c114a8dff1ac14a6","x":-260,"y":-120,"width":753,"height":640,"type":"group","label":"Поведение блока"},
+		{"id":"ee78bd2c9124518d","x":-240,"y":-100,"width":250,"height":60,"type":"text","text":"LexicalEnvironment"},
+		{"id":"923e2384602cfae5","type":"text","text":"oldEnv","x":140,"y":-40,"width":250,"height":66},
+		{"id":"4445d5cce367f27b","type":"text","text":"blockEnvoldEnv","x":120,"y":120,"width":250,"height":66},
+		{"id":"ab544f54b11aa916","type":"text","text":"NewDeclarativeEnvironment","x":120,"y":260,"width":250,"height":66},
+		{"id":"d5ae60bb2ffa18ae","type":"text","text":"NewDeclarativeEnvironment","x":-220,"y":260,"width":250,"height":66}
+	],
+	"edges":[
+		{"id":"e208a0307f02318a","fromNode":"923e2384602cfae5","fromSide":"left","toNode":"ee78bd2c9124518d","toSide":"right"}
+	]
+}

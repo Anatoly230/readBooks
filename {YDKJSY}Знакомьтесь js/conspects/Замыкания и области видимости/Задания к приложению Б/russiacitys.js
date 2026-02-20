@@ -8849,7 +8849,9 @@ var russiaСities = {
     }
 };
 
+
 function startCityzen(cities, attemptCount = 3) {
+
     if (!cities) {
         console.log('Введите базу городов, в которые планируете играть)')
         return startCityzen;
@@ -8857,15 +8859,26 @@ function startCityzen(cities, attemptCount = 3) {
 
     var lastWord;
     var firstLetter;
-    var lastletter;
+    var lastLetter;
     var cache = {};
-    var guide = Object
-        .keys(cities)
-        .reduce(getGuideFromArrayValues, {});
+    var cityesList = Object.keys(cities);
+    var cityesInitials = Object.keys(cityesList.reduce(getFirstLetters, {}));
+    var guide = cityesList.reduce(getCityesGuide, {});
 
     return function citySearcher(city, info) {
+
+        city = city.split("")
+            .map(function (el, i) {
+                if (i < 1) return el.toUpperCase();
+                return el.toLowerCase();
+            })
+            .join('');
+
         if (info) return cities[city];
+
         lastWord = !lastWord ? city : lastWord;
+
+
         firstLetter = city[0];
 
         if (cache[city]) {
@@ -8876,31 +8889,76 @@ function startCityzen(cities, attemptCount = 3) {
             attemptCount--;
             return `Такого города нету(\n Можете попробовать ещё ${attemptCount} раз`;
         }
+        if (lastLetter && lastLetter !== firstLetter) {
+            attemptCount--;
+            return `Город  должен начинеться с буквы "${lastLetter}" так как в предыдущем слове, последняя буква на которую может наичнаться город "${lastWord}" это буква "${lastLetter}" \n Можете попробовать ещё ${attemptCount} раз`;
+        }
+
         if (!attemptCount) return 'Ваши попытки завершились, начните игру заново(';
 
+
+
         cache[city] = 'user';
-        lastletter = guide[firstLetter][city];
+
+        lastLetter = guide[firstLetter][city].toUpperCase();
         delete guide[firstLetter][city];
 
 
-        for (const c in guide[firstLetter]) {
+        for (const c in guide[lastLetter]) {
             city = c;
+            cache[city] = 'comp';
+            firstLetter = city[0].toUpperCase();
+            lastWord = city;
+            lastLetter = guide[lastLetter][city].toUpperCase();
             break;
         }
+        delete guide[firstLetter][city];
 
-        cache[city] = 'comp';
-        return city;
+        return `${city} тебе на ${lastLetter}`;
     }
 
-    function getGuideFromArrayValues(acc, word) {
+    function getCityesGuide(acc, word) {
+
         var firstLetter = word[0];
-        var lastLetter = word[word.length - 1];
+
+
+        for (let j = word.length - 1; j >= 0; j--) {
+            lastLetter = word[j].toUpperCase();
+
+            if (cityesInitials.includes(lastLetter)) break;
+            continue;
+        }
+
         if (!acc[firstLetter]) acc[firstLetter] = {};
         acc[firstLetter][word] = lastLetter;
         return acc;
     }
 
+    function getFirstLetters(acc, el) {
+        firstLetter = el[0];
+        if (!acc[firstLetter]) acc[firstLetter] = firstLetter;
+        return acc;
+    }
+
+    function binarySearch(arr, el) {
+        var start = 0;
+        var end = arr.length;
+        var middle = Math.ceil(end / 2);
+        while (start <= end) {
+            if (arr[middle] === el) return middle;
+            if (arr[middle] > el) {
+                end = middle - 1;
+            } else {
+                start = middle + 1;
+            }
+        }
+        return false;
+    }
+
 }
 var test = startCityzen(russiaСities);
+
+
+console.log(test("Абакан"))
 
 
