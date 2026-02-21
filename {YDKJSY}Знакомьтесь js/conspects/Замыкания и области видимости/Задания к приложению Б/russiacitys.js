@@ -8850,9 +8850,9 @@ var russiaСities = {
 };
 
 
-function startCityzen(cities, attemptCount = 3) {
+function startCityzen(cityes, attemptCount = 3) {
 
-    if (!cities) {
+    if (!cityes) {
         console.log('Введите базу городов, в которые планируете играть)')
         return startCityzen;
     }
@@ -8861,12 +8861,21 @@ function startCityzen(cities, attemptCount = 3) {
     var firstLetter;
     var lastLetter;
     var cache = {};
-    var cityesList = Object.keys(cities);
+    var cityesList = Object.keys(cityes);
     var cityesInitials = Object.keys(cityesList.reduce(getFirstLetters, {}));
     var guide = cityesList.reduce(getCityesGuide, {});
 
     return function citySearcher(city, info) {
+        // if (typeof (info * 1) === 'number') return attemptCount = info;  //показать информацию по городу city
+        // if (info === 'restart') return startCityzen(cityes, 3);  // перезапустить игру
 
+        if (info === 'status') {
+            return {
+                'Попыток': attemptCount,
+                'Запись': cache,
+
+            }
+        };
         city = city.split("")
             .map(function (el, i) {
                 if (i < 1) return el.toUpperCase();
@@ -8874,47 +8883,56 @@ function startCityzen(cities, attemptCount = 3) {
             })
             .join('');
 
-        if (info) return cities[city];
-
-        lastWord = !lastWord ? city : lastWord;
-
-
-        firstLetter = city[0];
-
-        if (cache[city]) {
-            attemptCount--;
-            return `Город уже был назван \n Можете попробовать ещё ${attemptCount} раз`;
-        }
-        if (!guide[firstLetter][city] && attemptCount) {
-            attemptCount--;
-            return `Такого города нету(\n Можете попробовать ещё ${attemptCount} раз`;
-        }
-        if (lastLetter && lastLetter !== firstLetter) {
-            attemptCount--;
-            return `Город  должен начинеться с буквы "${lastLetter}" так как в предыдущем слове, последняя буква на которую может наичнаться город "${lastWord}" это буква "${lastLetter}" \n Можете попробовать ещё ${attemptCount} раз`;
-        }
+        if (info === 'info') return cityes[city];
+        console.log(cityes[city])
+        if (info === 'miss') return `${getWordOfLastLetter()} тебе на  тебе на ${lastLetter}`;
+        if (info === 'last') return `Последнее слово было ${lastWord}, тебе на ${lastLetter}`;
 
         if (!attemptCount) return 'Ваши попытки завершились, начните игру заново(';
 
 
 
-        cache[city] = 'user';
+        firstLetter = city[0];
 
+
+        if (info === 'attepmt') return attemptCount;  // перезапустить игру
+        if (info === 'hint') return guide[firstLetter];  //показать все города начинаущиеся на букву `firstLetter` 
+
+
+
+        if (cache[city]) {
+            attemptCount--; // уменьшается количество попыток
+            return `Город уже был назван \n Можете попробовать ещё ${attemptCount} раз`;
+        }
+        if (!guide[firstLetter][city]) {  // проверка наличия  такго города в словаре
+            attemptCount--; // уменьшается количество попыток
+            return `Такого города нету(\n Можете попробовать ещё ${attemptCount} раз`;
+        }
+        lastWord = !lastWord ? city : lastWord;
+        if (lastLetter && lastLetter !== firstLetter) { // проверка наличия последней буквы от предыдущего слова и если да, то равна ли она первой букве нового слова
+            attemptCount--; // уменьшается количество попыток
+            return `Город  должен начинеться с буквы "${lastLetter}" так как в предыдущем слове, последняя буква на которую может наичнаться город "${lastWord}" это буква "${lastLetter}" \n Можете попробовать ещё ${attemptCount} раз`;
+        }
+
+
+        cache[city] = 'user'; // запись результата в кэш от user
         lastLetter = guide[firstLetter][city].toUpperCase();
         delete guide[firstLetter][city];
-
-
-        for (const c in guide[lastLetter]) {
-            city = c;
-            cache[city] = 'comp';
-            firstLetter = city[0].toUpperCase();
-            lastWord = city;
-            lastLetter = guide[lastLetter][city].toUpperCase();
-            break;
-        }
-        delete guide[firstLetter][city];
+        city = getWordOfLastLetter();
 
         return `${city} тебе на ${lastLetter}`;
+
+        function getWordOfLastLetter() {
+            let c;
+            cityesRange = Object.keys(guide[lastLetter]); //создание массива диапазона городов, по нужной букве
+            c = cityesRange[randomizer(cityesRange.length - 1)] // произвольный выбор города
+            cache[c] = 'comp'; // запись результата в кэш от comp
+            firstLetter = c[0].toUpperCase();
+            lastWord = c;
+            lastLetter = guide[lastLetter][c].toUpperCase();
+            delete guide[firstLetter][c]; // удаление города из словаря 
+            return c;
+        }
     }
 
     function getCityesGuide(acc, word) {
@@ -8953,6 +8971,10 @@ function startCityzen(cities, attemptCount = 3) {
             }
         }
         return false;
+    }
+
+    function randomizer(num) {
+        return Math.round(Math.random() * num);
     }
 
 }
