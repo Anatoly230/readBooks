@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"d40d111e13f36030","x":5320,"y":960,"width":560,"height":180,"type":"text","text":"**Environment Record** \n\n`OuterEnv:` *либо `null` если нет внешней области видимости, либо ссылка на внешнюю область видимости*\n"},
+		{"id":"0edc9bd6cd395f0d","x":4686,"y":188,"width":634,"height":572,"type":"text","text":"```js\n {\n \"Абаза\": {\n        \"region\": \"Хакасия\",\n        \"federalDistrict\": \"Сибирский\",\n        \"population\": \"12 272\",\n        \"firstMention\": \"1867\",\n        \"cityStatus\": \"1966\",\n        \"formerName\": \"Абаканский Завод, Абаканско-Заводское\"\n    },\n    \"Абакан\": {\n        \"region\": \"Хакасия\",\n        \"federalDistrict\": \"Сибирский\",\n        \"population\": \"184 769\",\n        \"firstMention\": \"1734\",\n        \"cityStatus\": \"1931\",\n        \"formerName\": \"Усть-Абаканское (до 1931)\"\n    },\n    \"Абдулино\": {\n        \"region\": \"Оренбургская область\",\n        \"federalDistrict\": \"Приволжский\",\n        \"population\": \"17 274\",\n        \"firstMention\": \"1795\",\n        \"cityStatus\": \"1923\",\n        \"formerName\": \"\"\n    },\n }\n```"},
+		{"id":"ba3bf4f081e96c88","x":5960,"y":120,"width":600,"height":520,"type":"text","text":"Запись среды — это тип спецификации, используемый для определения связи идентификаторов с конкретными переменными и функциями на основе лексической вложенной структуры кода ECMAScript. Обычно запись среды связана с какой-либо конкретной синтаксической структурой кода ECMAScript, такой как FunctionDeclaration, BlockStatement или Catch-клаузула TryStatement. Каждый раз, когда такой код оценивается, создается новая запись среды для записи связей идентификаторов, созданных этим кодом.\n\nКаждая запись среды имеет поле [[OuterEnv]], которое может быть либо null, либо ссылкой на внешнюю запись среды. Это используется для моделирования логического вложения значений записей среды. Внешняя ссылка (внутренней) записи среды — это ссылка на запись среды, которая логически окружает внутреннюю запись среды. Внешняя запись среды, конечно, может иметь свою собственную внешнюю запись среды. Запись среды может служить внешней средой для нескольких внутренних записей среды. Например, если FunctionDeclaration содержит две вложенные FunctionDeclarations, то записи среды каждой из вложенных функций будут иметь в качестве внешней записи среды запись среды текущей оценки окружающей функции.\n"},
+		{"id":"2510a45366071d35","x":6200,"y":843,"width":421,"height":117,"type":"text","text":"`Declarative Environment Record`"},
+		{"id":"fae5e8ae5f09ba66","type":"text","text":" `Object Environment Record`","x":6200,"y":1023,"width":421,"height":117},
+		{"id":"c374c0ee886f5b98","type":"text","text":"`Global Environment Record`","x":6200,"y":1200,"width":421,"height":117},
+		{"id":"864282a17a405c96","x":6820,"y":761,"width":320,"height":82,"type":"text","text":"`Function Environment Records`"},
+		{"id":"cad51eb9fcc4eee8","x":6832,"y":956,"width":308,"height":67,"type":"text","text":" `Module Environment Records`"}
+	],
+	"edges":[
+		{"id":"144bda1ac2e930e2","fromNode":"ba3bf4f081e96c88","fromSide":"bottom","toNode":"d40d111e13f36030","toSide":"top"},
+		{"id":"879b43c1dd268639","fromNode":"d40d111e13f36030","fromSide":"right","toNode":"2510a45366071d35","toSide":"left"},
+		{"id":"a40387c87e3bc788","fromNode":"d40d111e13f36030","fromSide":"right","toNode":"fae5e8ae5f09ba66","toSide":"left"},
+		{"id":"639d7c03b2a4e804","fromNode":"d40d111e13f36030","fromSide":"right","toNode":"c374c0ee886f5b98","toSide":"left"},
+		{"id":"c38c5b2bdad278b7","fromNode":"2510a45366071d35","fromSide":"right","toNode":"864282a17a405c96","toSide":"left"},
+		{"id":"04b7b3123bc2fdd8","fromNode":"2510a45366071d35","fromSide":"right","toNode":"cad51eb9fcc4eee8","toSide":"left"}
+	]
+}

@@ -4,38 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "3c342d3659848b92",
+        "id": "6fe1868e17662ed4",
         "type": "tabs",
         "children": [
           {
-            "id": "d4efcfaf838d2e72",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "ECMASCRIPT/схемы/Untitled 1.canvas",
-                "viewState": {
-                  "x": 293.5581388092842,
-                  "y": 76.60444893636475,
-                  "zoom": -0.5071504971866916
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled 1"
-            }
-          },
-          {
-            "id": "1318988288c85189",
+            "id": "ad1d39803eb83e38",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
+                "file": "ECMASCRIPT/Декларация функиции, запись нового объекта функции.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Приложение Б"
+              "title": "Декларация функиции, запись нового объекта функции"
+            }
+          },
+          {
+            "id": "ebf5bfbb75b7dfc9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Область_видимости_и_замыкания_2_е_изд."
             }
           }
         ]
@@ -50,6 +45,7 @@
       {
         "id": "0ff5f71e41889867",
         "type": "tabs",
+        "dimension": 67.09401709401709,
         "children": [
           {
             "id": "a491e4796b7eba8c",
@@ -94,11 +90,12 @@
         ]
       },
       {
-        "id": "ed4b76c3723f2a54",
+        "id": "df09d241d2efdb8a",
         "type": "tabs",
+        "dimension": 32.9059829059829,
         "children": [
           {
-            "id": "2fb638f0bd2cfd8d",
+            "id": "456f7e00ffaf7422",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -111,7 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 500.5086555480957
+    "width": 282.5110321044922
   },
   "right": {
     "id": "da29d409c77516e6",
@@ -127,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/7. Использование замыканий.md",
+                "file": "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +134,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 7. Использование замыканий"
+              "title": "Backlinks for Область_видимости_и_замыкания_2_е_изд."
             }
           },
           {
@@ -146,12 +143,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Последовательность изучения.md",
+                "file": "вы пока не знаете js/Исходники/1_{ВПЕНЗJS_Познакомьтесь,_JavaScript_2_е.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Последовательность изучения"
+              "title": "Outgoing links from 1_{ВПЕНЗJS_Познакомьтесь,_JavaScript_2_е"
             }
           },
           {
@@ -189,13 +186,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Движок-компилятор-область видимости"
+              "title": "Outline of 3. Цепочка областей видимости"
             }
           },
           {
@@ -209,17 +206,17 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 220.5,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
@@ -228,62 +225,63 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d4efcfaf838d2e72",
+  "active": "ad1d39803eb83e38",
   "lastOpenFiles": [
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/tempCodeRunnerFile.js",
-    "ECMASCRIPT/учимся читать спецификацию/какой раздел за что отвечает.md",
-    "ECMASCRIPT/схемы/Untitled 1.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Untitled.canvas",
-    "ECMASCRIPT/учимся читать спецификацию",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Камешки и банки.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
-    "ECMASCRIPT/схемы/Untitled.canvas",
-    "ECMASCRIPT/9.1.md",
-    "ECMASCRIPT/схемы",
-    "ECMASCRIPT/14.3.1 Let and Const Declarations.md",
-    "ECMASCRIPT/Терминология.md",
-    "ECMASCRIPT/ECMA.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение А.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/8. Паттерн МОДУЛЬ.md",
-    "Untitled.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/cityGame.js",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/russiacitys.js",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Приложение Б.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б",
+    "ECMASCRIPT/что происходит с функцией от создания до вызова.md",
+    "ECMASCRIPT/Декларация функиции, запись нового объекта функции.md",
+    "ECMASCRIPT/Исследование.md",
+    "ECMAScriptCode.md",
+    "ECMASCRIPT/Показать.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Области видимости функции -startCityzen-.canvas",
     "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Untitled",
-    "Untitled 2.md",
-    "Untitled 1.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Определение модуля.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Примеры из приложения А.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
-    "{YDKJSY}Знакомьтесь js/src/Замыкания_и_объекты.pdf",
-    "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Последовательность изучения.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
-    "приложении А.md",
-    "ECMASCRIPT/9. Исполняемый код и контексты выполнения.md",
-    "{YDKJSY}Знакомьтесь js/src/все книги на англ. серии YDKJSY.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/7. Использование замыканий.md",
-    "Библия/Untitled.md",
-    "Переводчик/переводчик.md",
-    "FP/src/переводчик.md",
-    "Functional-Light-JS/src/Original/README.md",
-    "Functional-Light-JS/CONTRIBUTING.md",
-    "Functional-Light-JS/ISSUE_TEMPLATE.md",
-    "Functional-Light-JS/PULL_REQUEST_TEMPLATE.md",
-    "Functional-Light-JS/src/Original/manuscript/images/marketing/social-header.png",
-    "Functional-Light-JS/src/Original/manuscript/images/marketing/social-avatar.png",
-    "Functional-Light-JS/src/Original/manuscript/images/marketing/print-book-cover.png",
-    "Functional-Light-JS/src/Original/manuscript/images/marketing/front-cover-small.png",
-    "Functional-Light-JS/src/Original/manuscript/images/marketing/front-cover-sd.png",
-    "Functional-Light-JS/src/Original/manuscript/images/marketing/front-cover-hd.png",
-    "Functional-Light-JS/src/Original/manuscript/images/marketing/fljs-lightbulb.svg",
-    "Functional-Light-JS/src/Original/manuscript/images/marketing/back-cover-hd.png",
-    "Functional-Light-JS/src/Original/manuscript/images/fig9.svg",
-    "Functional-Light-JS/src/Original/manuscript/images/fig9.png",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/6. Ограничение раскрытия областей видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5. (Не такой уж) тайный жизненный цикл переменных.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/3. Цепочка областей видимости — копия.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
+    "Untitled.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Содержание.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/5 (Не такой уж) тайный жизненный цикл переменных.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
+    "images/Pasted image 20260130195114.png",
+    "images/Pasted image 20260129215522.png",
+    "images/Pasted image 20260123161952.png",
+    "images/Pasted image 20260120132510.png",
+    "images/Pasted image 20260120132429.png",
+    "images",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Область видимости имени функции.md",
+    "Untitled 1.md",
+    "{YDKJSY}Знакомьтесь js/src/Познакомьтесь,_JavaScript_2_е_изд.pdf",
+    "Js ninja secrets/src/Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
+    "Резиг_и_др_Секреты_JavaScript_ниндзя_2017.pdf",
+    "123.pdf",
+    "Функциональное программирование/src/Функциональное программирование на js - как улучшить код.pdf",
+    "Pasted image 20260130195114.png",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Untitled.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы",
+    "SQL/src/SQL_для_анализа_данных.pdf",
+    "SQL/src/123.pdf",
+    "Точечный рисунок.bmp",
+    "Pasted image 20260129215522.png",
+    "Js ninja secrets/conspects/TDZ  let const class.md",
+    "Pasted image 20260120132429.png",
+    "Pasted image 20260120132510.png",
+    "ECMASCRIPT/9. Исполняемый код и контексты выполнения.md",
+    "ECMASCRIPT/Терминология.md",
+    "ThisMode.md",
+    "ECMASCRIPT/14.3.1 Let and Const Declarations.md",
+    "Js ninja secrets/conspects/__proto__  vs prototype.md",
     "Js ninja secrets/conspects/Визуализация_действий_объявление_и_выполнение_функции.canvas",
-    "Js ninja secrets/conspects/Контексты выполнения функции.canvas"
+    "Js ninja secrets/conspects/Подробнее о this.md",
+    "Js ninja secrets/conspects/Контексты выполнения функции.canvas",
+    "Js ninja secrets/conspects/Лексическое окружение и внутреннее свойство Enviroment.canvas",
+    "Js ninja secrets/conspects/Механизм создания объекта при помощи конструткора.canvas",
+    "Js ninja secrets/conspects/Функция-конструктор - создание объекта.canvas",
+    "Js ninja secrets/conspects/создание объекта и лексичское окружение.canvas",
+    "Js ninja secrets/conspects/Создание объекта и лексическое окружение.canvas"
   ]
 }
