@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ECMASCRIPT/Декларация функиции, запись нового объекта функции.md",
+                "file": "ECMASCRIPT/Показать.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Декларация функиции, запись нового объекта функции"
+              "title": "Показать"
             }
           },
           {
@@ -225,15 +225,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad1d39803eb83e38",
+  "active": "456f7e00ffaf7422",
   "lastOpenFiles": [
+    "ECMASCRIPT/Показать.md",
+    "ECMASCRIPT/Исследование.md",
     "ECMASCRIPT/что происходит с функцией от создания до вызова.md",
     "ECMASCRIPT/Декларация функиции, запись нового объекта функции.md",
-    "ECMASCRIPT/Исследование.md",
-    "ECMAScriptCode.md",
-    "ECMASCRIPT/Показать.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Области видимости функции -startCityzen-.canvas",
     "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
+    "ECMAScriptCode.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Области видимости функции -startCityzen-.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/7. Использование замыканий.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/6. Ограничение раскрытия областей видимости.md",
@@ -276,7 +276,6 @@
     "ECMASCRIPT/14.3.1 Let and Const Declarations.md",
     "Js ninja secrets/conspects/__proto__  vs prototype.md",
     "Js ninja secrets/conspects/Визуализация_действий_объявление_и_выполнение_функции.canvas",
-    "Js ninja secrets/conspects/Подробнее о this.md",
     "Js ninja secrets/conspects/Контексты выполнения функции.canvas",
     "Js ninja secrets/conspects/Лексическое окружение и внутреннее свойство Enviroment.canvas",
     "Js ninja secrets/conspects/Механизм создания объекта при помощи конструткора.canvas",
