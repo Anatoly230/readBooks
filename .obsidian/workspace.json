@@ -146,12 +146,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Последовательность изучения.md",
+                "file": "ECMASCRIPT/что происходит с функцией от создания до вызова.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Последовательность изучения"
+              "title": "Outgoing links from что происходит с функцией от создания до вызова"
             }
           },
           {
@@ -209,12 +209,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 220.5,
-    "collapsed": true
+    "width": 220.5
   },
   "left-ribbon": {
     "hiddenItems": {
