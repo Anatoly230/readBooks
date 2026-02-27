@@ -25,20 +25,18 @@
             "id": "6a572e55fa56f740",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "ECMASCRIPT/схемы/Устройство функции.canvas",
-                "viewState": {
-                  "x": 9485.412775665896,
-                  "y": -1172.5759707043417,
-                  "zoom": -2.4722221321560496
-                }
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Устройство функции"
+              "icon": "lucide-file",
+              "title": "Приложение Б"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 500.5086555480957
+    "width": 500.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "da29d409c77516e6",
@@ -146,12 +145,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ECMASCRIPT/что происходит с функцией от создания до вызова.md",
+                "file": "ECMASCRIPT/схемы/Устройство функции.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from что происходит с функцией от создания до вызова"
+              "title": "Outgoing links from Устройство функции"
             }
           },
           {
@@ -204,8 +203,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
@@ -223,17 +222,28 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Create new base": false
     }
   },
-  "active": "d4efcfaf838d2e72",
+  "active": "6a572e55fa56f740",
   "lastOpenFiles": [
-    "ECMASCRIPT/Декларация функиции, запись нового объекта функции.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/tempCodeRunnerFile.js",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/clousere3.js",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/clousere2.js",
+    "ECMASCRIPT/схемы/что такое Realm.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/factorize.canvas",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Области видимости функции -startCityzen-.canvas",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/clousere1.js",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
+    "ECMASCRIPT/Примитивный движок согласно Ecmascript.md",
+    "ECMASCRIPT/поэтапность выполнения кода в Ecmscript.md",
     "ECMASCRIPT/От текста к выполнению кода.md",
-    "ECMASCRIPT/схемы/Устройство функции.canvas",
-    "ECMASCRIPT/что происходит с функцией от создания до вызова.md",
     "ECMASCRIPT/схемы/Untitled 1.canvas",
+    "ECMASCRIPT/схемы/Устройство функции.canvas",
+    "conflict-files-obsidian-git.md",
+    "ECMASCRIPT/что происходит с функцией от создания до вызова.md",
+    "ECMASCRIPT/Декларация функиции, запись нового объекта функции.md",
     "ECMASCRIPT/Показать.md",
     "ECMASCRIPT/Терминология.md",
     "ECMASCRIPT/учимся читать спецификацию/какой раздел за что отвечает.md",
@@ -241,12 +251,8 @@
     "ECMASCRIPT/9.1.md",
     "ECMASCRIPT/14.3.1 Let and Const Declarations.md",
     "Environment.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
     "Untitled 1.md",
     "Untitled.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Области видимости функции -startCityzen-.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/tempCodeRunnerFile.js",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Untitled.canvas",
     "ECMASCRIPT/учимся читать спецификацию",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Камешки и банки.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы",
@@ -260,19 +266,12 @@
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б",
     "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Untitled",
     "Untitled 2.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Определение модуля.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Примеры из приложения А.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Тренировка.canvas",
-    "{YDKJSY}Знакомьтесь js/src/Замыкания_и_объекты.pdf",
     "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Последовательность изучения.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/4. Глобальная область видимости.md",
-    "приложении А.md",
-    "{YDKJSY}Знакомьтесь js/src/все книги на англ. серии YDKJSY.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/7. Использование замыканий.md",
-    "Библия/Untitled.md",
-    "Переводчик/переводчик.md",
     "Functional-Light-JS/src/Original/manuscript/images/marketing/social-header.png",
     "Functional-Light-JS/src/Original/manuscript/images/marketing/social-avatar.png",
     "Functional-Light-JS/src/Original/manuscript/images/marketing/print-book-cover.png",
