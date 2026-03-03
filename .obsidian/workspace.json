@@ -25,14 +25,12 @@
             "id": "6a572e55fa56f740",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
-                "mode": "source",
-                "source": false
+                "file": "Devid Flenagan -js guide/src/devid_flenagan_-_javascript_podrobnoe_rukovodstvo.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Приложение Б"
+              "icon": "lucide-file-text",
+              "title": "devid_flenagan_-_javascript_podrobnoe_rukovodstvo"
             }
           }
         ],
@@ -227,13 +225,14 @@
   },
   "active": "6a572e55fa56f740",
   "lastOpenFiles": [
+    "Библия/src/Bible.pdf",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/tempCodeRunnerFile.js",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/clousere3.js",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/clousere2.js",
     "ECMASCRIPT/схемы/что такое Realm.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/factorize.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Области видимости функции -startCityzen-.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/clousere1.js",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
     "ECMASCRIPT/Примитивный движок согласно Ecmascript.md",
@@ -264,7 +263,6 @@
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/russiacitys.js",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Приложение Б.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б",
-    "{YDKJSY}Знакомьтесь js/src/Область_видимости_и_замыкания_2_е_изд..pdf",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Движок-компилятор-область видимости.canvas",
     "Untitled 2.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/схемы/Определение модуля.canvas",
