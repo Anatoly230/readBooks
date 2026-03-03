@@ -11,17 +11,14 @@
             "id": "b8abf2c4122b92ad",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "ECMASCRIPT/схемы/Execution Contexts.canvas",
-                "viewState": {
-                  "x": 1167.012960510884,
-                  "y": -420.1962217830324,
-                  "zoom": -1.9999999999999998
-                }
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Execution Contexts"
+              "icon": "lucide-file",
+              "title": "Приложение Б"
             }
           }
         ]
@@ -217,14 +214,14 @@
   },
   "active": "b8abf2c4122b92ad",
   "lastOpenFiles": [
-    "ECMASCRIPT/схемы/environment record.canvas",
+    "ECMASCRIPT/deepseek.md",
     "ECMASCRIPT/схемы/Execution Contexts.canvas",
+    "ECMASCRIPT/схемы/environment record.canvas",
     "ECMASCRIPT/поэтапность выполнения кода в Ecmscript.md",
     "ECMASCRIPT/От текста к выполнению кода.md",
     "ECMASCRIPT/отличия environmentRecord и lexicalEnvironment.md",
     "ECMASCRIPT/Последовательность.md",
     "ECMASCRIPT/схемы/deepsek Execution context Environment record Realm.canvas",
-    "ECMASCRIPT/deepseek.md",
     "ECMASCRIPT/Execution Contexts,  Environment Records.md",
     "ECMASCRIPT/схемы/Execution context Environment record Realm.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
@@ -271,7 +268,6 @@
     "Точечный рисунок.bmp",
     "Pasted image 20260129215522.png",
     "Pasted image 20260120132429.png",
-    "Pasted image 20260120132510.png",
-    "Js ninja secrets/conspects/Визуализация_действий_объявление_и_выполнение_функции.canvas"
+    "Pasted image 20260120132510.png"
   ]
 }
