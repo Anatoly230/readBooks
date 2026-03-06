@@ -32,20 +32,16 @@ fn(5);
 Здесь есть:
 
 - function declaration
-    
 - lexical environment
-    
 - closure
-    
 - return
-    
 - call
-    
 - expression evaluation
 
 ## БЛОК 1 — Lexical Grammar (текст → токены)
 
 Раздел: **A.1 Lexical Grammar** в ECMAScript Language Specification
+[A.1 Lexical Grammar](https://tc39.es/ecma262/#sec-lexical-grammar "Lexical Grammar")
 
 ---
 
@@ -56,11 +52,8 @@ fn(5);
 Он НЕ знает:
 
 - что такое функция
-    
 - что такое переменная
-    
 - что такое scope
-    
 
 Он просто режет текст на токены.
 
@@ -84,38 +77,28 @@ fn | ( | 5 | ) | ;
 1. На этом этапе нет scope
     
 2. Нет hoisting
-    
 3. Нет переменных
-    
 4. Нет выполнения
-    
 
-Есть только:
-
+Есть только
 - Identifier
-    
 - Keyword
-    
 - NumericLiteral
-    
 - Punctuator
-    
 - LineTerminator
-    
 
 ---
 
 ## 💬 Вопросы по Блоку 1
 
 1. Что произойдёт раньше — создание переменной или разбиение на токены?
-    
 2. Знает ли Lexical Grammar, что `outer` — это функция?
-    
 3. На каком этапе исчезают комментарии?
 
 # 🧱 БЛОК 2 — Syntax Grammar (токены → AST)
 
-Теперь включается Syntactic Grammar.
+Теперь включается *Syntactic Grammar.* 
+ [5.1.4 The Syntactic Grammar](https://tc39.es/ecma262/#sec-syntactic-grammar "The Syntactic Grammar")
 
 Она говорит:
 
@@ -143,7 +126,6 @@ Program
 ## Что важно
 
 Теперь код имеет структуру.
-
 Но он всё ещё НЕ выполняется.
 
 ---
@@ -151,15 +133,15 @@ Program
 ## 💬 Вопросы по Блоку 2
 
 1. Что создаётся раньше — AST или Execution Context?
-    
 2. На каком этапе проверяются синтаксические ошибки?
-    
 3. Может ли код выполниться, если AST не построен?
 
 # 🏗 БЛОК 3 — Global Declaration Instantiation
 
-Теперь начинается магия.
+ [ ScriptEvaluation ( scriptRecord )](https://tc39.es/ecma262/#sec-runtime-semantics-scriptevaluation "ScriptEvaluation ( scriptRecord )")
+ [GlobalDeclarationInstantiation](https://tc39.es/ecma262/#sec-globaldeclarationinstantiation)
 
+Теперь начинается магия.
 Перед выполнением программа проходит этап:
 
 > GlobalDeclarationInstantiation
@@ -218,28 +200,21 @@ FunctionDeclaration уже обработана на этапе instantiation.
 
 ## Строка:
 
-const fn = outer(10);
+`const fn = outer(10);`
 
 ### Шаги:
 
 1. Вычисляется `outer`
-    
 2. Проверяется что это callable
-    
 3. Создаётся новый Execution Context
-    
 4. Создаётся Function Environment
-    
 5. Параметр `a = 10`
-    
 6. Создаётся `b`
-    
 7. Возвращается функция `inner`
-    
 
 ⚠️ Внутри функции `inner` сохраняется:
 
-[[Environment]] → ссылка на outer environment
+`[[Environment]]` → ссылка на outer environment
 
 Вот где рождается замыкание.
 
@@ -248,11 +223,8 @@ const fn = outer(10);
 ## 💬 Вопросы по Блоку 4
 
 1. Когда создаётся environment для outer — во время объявления или вызова?
-    
 2. Что именно хранит `inner`?
-    
 3. Уничтожается ли environment outer после return?
-    
 
 ---
 
@@ -260,16 +232,12 @@ const fn = outer(10);
 
 Теперь вызываем:
 
-fn(5)
-
+`fn(5)`
 ### Что происходит:
 
 1. Создаётся новый Execution Context
-    
 2. Параметр `c = 5`
-    
 3. Начинается вычисление:
-    
 
 a + b + c
 
@@ -278,11 +246,8 @@ a + b + c
 ## Поиск переменных:
 
 - `c` → текущий environment
-    
 - `b` → внешний environment
-    
 - `a` → внешний environment
-    
 
 Это называется:
 
@@ -293,11 +258,8 @@ a + b + c
 ## 💬 Вопросы по Блоку 5
 
 1. Почему `a` всё ещё доступен?
-    
 2. Где хранится ссылка на outer environment?
-    
 3. В какой момент уничтожится outer environment?
-    
 
 ---
 
@@ -310,42 +272,31 @@ a + b + c
 Происходит:
 
 1. GetValue
-    
 2. ToNumber
-    
 3. AdditiveExpression Evaluation
-    
 4. Numeric addition
-    
 
 Это abstract operations.
 
 Когда вызывается функция:
 
-- используется internal method [[Call]]
-    
+- используется internal method `[[Call]]`
 
 ---
 
 ## Важно
 
 - `[[Call]]` — internal method
-    
 - `ToNumber` — abstract operation
-    
 - Evaluation — syntax-directed operation
-    
 
 ---
 
 ## 💬 Вопросы по Блоку 6
 
 1. Можно ли вызвать `[[Call]]` напрямую в JS?
-    
 2. Где существует `ToNumber`?
-    
 3. Что из этого реально есть в коде, а что только в спецификации?
-    
 
 ---
 

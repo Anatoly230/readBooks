@@ -1,26 +1,53 @@
 function calculator() {
     var sequenceOfClicks = [];
-    var allowedRange = /[\d\+\-\*\/=]/;
+    // var allowedRange = /[\d\+\-\*\/=]/;
     var allowedSign = /[\*\-\+\/]/;
     var numDetect = /\d/;
     var equal = '=';
     var result = 0;
     var err = "ERR";
 
-    return function calcInit(key) {
-        if (!(allowedRange.test(key))) {
-            return 'Введите цифру либо знаки +, -, *, /'
+    return {
+        number,
+        plus,
+        minus,
+        mult,
+        div,
+        eq,
+    }
+
+    function number(key) {
+        if (!(numDetect.test(key))) {
+            return 'Введите цифру'
         }
         sequenceOfClicks.push(key);
-        if (key !== equal) {
-            return key;
-        }
+        return key;
+    }
+    function plus() {
+        sequenceOfClicks.push("+");
+        return '+'
+    }
+    function minus() {
+        sequenceOfClicks.push("-");
+        return '-'
+    }
+    function mult() {
+
+        sequenceOfClicks.push("*");
+        return '*'
+    }
+    function div() {
+        sequenceOfClicks.push("/");
+        return '/'
+    }
+    function eq() {
         return logical();
     }
 
     function logical() {
         var sign = '+';
         var keys = sorting(sequenceOfClicks);
+        // console.log(keys)
         sequenceOfClicks = [];
 
         if (numDetect.test(keys[0])) result = 0;
@@ -39,7 +66,10 @@ function calculator() {
             if (isNaN(num)) continue;
 
             result = calculation(result, sign, num);
+
         }
+
+        return result;
     }
     function calculation(summ, sign, num) {
         var danger = summ === 0 || num === 0;
@@ -63,9 +93,11 @@ function calculator() {
             }
             bulder += key;
         }
+        result.push(bulder);
         return result;
     }
 }
+var calc = calculator();
 
 function useCalc(calc, keys) {
     return [...keys].reduce(
@@ -85,14 +117,24 @@ function useCalc(calc, keys) {
     );
 }
 
-
 var calc = calculator();
 
-console.log(useCalc(calc, "4+3="));           // 4+3=7
-console.log(useCalc(calc, "+9="));            // +9=16
-console.log(useCalc(calc, "*8="));            // *5=128
-console.log(useCalc(calc, "7*2*3="));         // 7*2*3=42
-console.log(useCalc(calc, "1/0="));           // 1/0=ERR
-console.log(useCalc(calc, "+3="));            // +3=ERR
-console.log(useCalc(calc, "51="));            // 51
-
+console.log(calc.number("4"));     // 4
+console.log(calc.plus());          // +
+console.log(calc.number("7"));     // 7
+console.log(calc.number("3"));     // 3
+console.log(calc.minus());         // -
+console.log(calc.number("2"));     // 2
+console.log(calc.minus());         // -
+console.log(calc.minus());         // -
+console.log(calc.number("3"));     // 2
+console.log(calc.div());     // 2
+console.log(calc.number("4"));     // 2
+console.log(calc.eq());            // 75
+console.log(calc.mult());     // 2
+console.log(calc.number("3"));     // 2
+console.log(calc.eq());            // 75
+console.log(calc.number("3"));     // 2
+console.log(calc.mult());         // -
+console.log(calc.number("0"));     // 2
+console.log(calc.eq());            // 75

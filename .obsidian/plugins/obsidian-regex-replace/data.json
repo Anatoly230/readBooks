@@ -1,6 +1,6 @@
 {
-  "findText": "    ",
-  "replaceText": "",
+  "findText": "javascript",
+  "replaceText": "`javascript`",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": true,

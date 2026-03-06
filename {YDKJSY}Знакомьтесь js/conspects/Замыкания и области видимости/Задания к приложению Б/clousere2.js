@@ -2,7 +2,7 @@ function toggle(str) {
     var args = arguments;
     var cursor = 0;
 
-    return function () {
+    return function next() {
         if (args.length === 0) return undefined;
         if (cursor >= args.length) cursor = 0;
         return args[cursor++];
