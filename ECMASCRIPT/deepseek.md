@@ -18,9 +18,9 @@
 
 ## 1. Глобальная фаза (до выполнения кода)
 
-Сначала создается глобальное окружение. Оно состоит из двух частей: **ObjectEnvironmentRecord** для `var` и `function`, и **DeclarativeEnvironmentRecord** для `let`, `const`, `class`.
+Сначала создается глобальное окружение. Оно состоит из двух частей: **`ObjectEnvironmentRecord`** для `var` и `function`, и **`DeclarativeEnvironmentRecord`** для `let`, `const`, `class`.
 
-javascript
+```js
 
 // Глобальный объект (window в браузере)
 const globalObject = window;
@@ -46,24 +46,27 @@ const globalLexicalEnvironment = {
   environmentRecord: globalEnvRecord,
   outer: null
 };
+```
 
 ## 2. Выполнение глобального кода
 
-javascript
 
+
+```js
 // var a = 1;
 globalEnvRecord.objectRecord.bindingObject.a = 1;
 // let x = 8; // выходит из TDZ
 globalEnvRecord.declarativeRecord.bindings.x = { value: 8, mutable: true, initialized: true };
 // function foo(x) { ... } - уже поднята, запоминает окружение
 foo.[[Environment]] = globalLexicalEnvironment;
+```
 
 ## 3. Вызов foo(5) – создание контекста выполнения функции
 
 При вызове `foo(5)` создается новый **Function Execution Context** и связанное с ним лексическое окружение.
 
-javascript
 
+```js
 // Контекст выполнения функции foo
 const fooExecutionContext = {
   LexicalEnvironment: null,   // будет заполнено
@@ -91,22 +94,22 @@ const fooLexicalEnvironment = {
 // Устанавливаем оба окружения в контексте
 fooExecutionContext.LexicalEnvironment = fooLexicalEnvironment;
 fooExecutionContext.VariableEnvironment = fooLexicalEnvironment; // для var
+```
 
 ## 4. Выполнение тела функции до if
 
-javascript
-
+```js
 // var d = 30;
 fooFunctionEnvRecord.bindings.d.value = 30;
 // let b = 2;
 fooFunctionEnvRecord.bindings.b = { value: 2, mutable: true, initialized: true };
+```
 
 ## 5. Вход в блок if
 
 При входе в блок `if (x > 0) { ... }` создается новое лексическое окружение для блока.
 
-javascript
-
+```js
 // Окружение блока if
 const ifBlockEnvRecord = {
   bindings: {
@@ -119,19 +122,20 @@ const ifBlockLexicalEnvironment = {
 };
 // Теперь LexicalEnvironment указывает на блок if
 fooExecutionContext.LexicalEnvironment = ifBlockLexicalEnvironment;
+```
 
-## 6. Выполнение const c = 3;
+## 6. Выполнение `const c = 3`;
 
-javascript
 
+```js
 ifBlockEnvRecord.bindings.c = { value: 3, mutable: false, initialized: true };
+```
 
 ## 7. Выполнение console.log(a, b, c, x, d)
 
 В этот момент структуры выглядят так:
 
-javascript
-
+```js
 // Текущий контекст
 const currentContext = {
   LexicalEnvironment: {
@@ -149,14 +153,13 @@ const currentContext = {
 // c – находим в текущем блоке = 3
 // x – нет в блоке -> в fooLexicalEnvironment находим x = 5 (параметр)
 // d – нет в блоке -> в fooLexicalEnvironment находим d = 30
+```
 
 ## 8. Выход из блока if
 
 После выполнения блока `if` мы выходим из него, и `LexicalEnvironment` восстанавливается на окружение функции:
 
-javascript
-
-fooExecutionContext.LexicalEnvironment = fooLexicalEnvironment;
+`fooExecutionContext.LexicalEnvironment = fooLexicalEnvironment;`
 
 Переменная `c` больше недоступна (если бы не было замыкания, она может быть собрана GC).
 
@@ -168,8 +171,7 @@ fooExecutionContext.LexicalEnvironment = fooLexicalEnvironment;
 
 ### 9.1 Создание окружения для итерации
 
-javascript
-
+```js
 // Окружение для первой итерации while
 const whileIter1EnvRecord = {
   bindings: {
@@ -181,11 +183,11 @@ const whileIter1LexicalEnvironment = {
   outer: fooLexicalEnvironment // outer указывает на окружение функции
 };
 fooExecutionContext.LexicalEnvironment = whileIter1LexicalEnvironment;
+```
 
 ### 9.2 Выполнение тела цикла (первая итерация)
 
-javascript
-
+```js
 // let v = b + a
 // Сначала ищем b и a
 // b: нет в текущем окружении -> идем в outer (fooLexicalEnvironment) -> находим b = 2
@@ -205,6 +207,7 @@ fooFunctionEnvRecord.bindings.d.value = 30 + 3; // d = 33
 // x += v
 // ищем x в fooFunctionEnvRecord.bindings.x (параметр функции)
 fooFunctionEnvRecord.bindings.x.value = 5 + 3; // x = 8
+```
 
 ### 9.3 Конец первой итерации
 
@@ -214,8 +217,7 @@ fooFunctionEnvRecord.bindings.x.value = 5 + 3; // x = 8
 
 ### 9.4 Вторая итерация
 
-javascript
-
+```js
 // Создаем новое окружение для второй итерации
 const whileIter2EnvRecord = {
   bindings: {
@@ -239,16 +241,14 @@ fooFunctionEnvRecord.bindings.b.value = 5 + 9; // b = 14
 fooFunctionEnvRecord.bindings.d.value = 33 + 9; // d = 42
 // x += v
 fooFunctionEnvRecord.bindings.x.value = 8 + 9; // x = 17
-
+```
 Условие `a < 10` теперь ложно (a = 13), поэтому цикл завершается.
 
 ## 10. После завершения цикла
 
 После выхода из цикла `LexicalEnvironment` восстанавливается на окружение функции (так как мы покинули блок цикла).
 
-javascript
-
-fooExecutionContext.LexicalEnvironment = fooLexicalEnvironment;
+`fooExecutionContext.LexicalEnvironment = fooLexicalEnvironment;`
 
 Переменная `v` больше не существует (она была в окружениях итераций, которые уже не активны).
 
@@ -258,8 +258,7 @@ fooExecutionContext.LexicalEnvironment = fooLexicalEnvironment;
 
 ## Полная картина окружений в момент первой итерации цикла
 
-javascript
-
+```js
 // Структуры в памяти (упрощенно)
 const environments = {
   global: {
@@ -285,6 +284,7 @@ const environments = {
 };
 // Цепочка видимости для переменных в первой итерации:
 // whileIteration1 -> function -> global
+```
 
 ## Ключевые моменты
 

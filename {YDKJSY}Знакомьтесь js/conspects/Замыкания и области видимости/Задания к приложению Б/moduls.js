@@ -138,3 +138,4 @@ console.log(calc.number("3"));     // 2
 console.log(calc.mult());         // -
 console.log(calc.number("0"));     // 2
 console.log(calc.eq());            // 75
+

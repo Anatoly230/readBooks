@@ -10,7 +10,7 @@
 # 🧠 Главный вопрос
 
 > В какой момент формируется самый первый объект?  
-> Связан ли он с %Object.prototype%?
+> Связан ли он с `%Object.prototype%`?
 
 Ответ коротко:
 
@@ -19,14 +19,14 @@
 
 ---
 
-# 🏗 1️⃣ Всё начинается с CreateRealm()
+# 🏗 1️⃣ Всё начинается с `CreateRealm()`
 
 Когда движок запускается (например, открывается вкладка в браузере), происходит:
 
-InitializeHostDefinedRealm()  
-  → CreateRealm()  
-      → CreateIntrinsics()  
-      → SetDefaultGlobalBindings()
+`InitializeHostDefinedRealm()`  
+  → `CreateRealm()`  
+      → `CreateIntrinsics()`  
+      → `SetDefaultGlobalBindings()`
 
 Вот здесь и рождается "вселенная JS".
 
@@ -34,52 +34,37 @@ InitializeHostDefinedRealm()
 
 # 🌌 Что такое Realm?
 
-Realm — это контейнер, внутри которого находятся:
-
-- Intrinsics
-    
-- Global Object
-    
-- Global Environment
-    
-- Template Map
-    
-- Execution Context Stack
-    
+`Realm` — это контейнер, внутри которого находятся
+- `Intrinsics`
+- `Global Object`
+- `Global Environment`
+- `Template Map`
+- `Execution Context Stack`
 
 Упрощённо:
 
+```intrings
 Realm = {  
   [[Intrinsics]],  
   [[GlobalObject]],  
   [[GlobalEnv]]  
 }
+```
 
 ---
 
 # 🧱 2️⃣ Когда создаётся самый первый объект?
 
-Во время:
-
-CreateIntrinsics(realm)
-
-Там создаются все intrinsic objects:
-
-- %Object%
-    
-- %Object.prototype%
-    
-- %Function%
-    
-- %Function.prototype%
-    
-- %Array%
-    
-- %Array.prototype%
-    
+Во время
+`CreateIntrinsics(realm)`
+Там создаются все `intrinsic objects`
+- `%Object%`
+- `%Object.prototype%`
+- `%Function%`
+- `%Function.prototype%`
+- `%Array%`
+- `%Array.prototype%`
 - и т.д.
-    
-
 ---
 
 # 🔥 Что создаётся самым первым?
@@ -87,24 +72,16 @@ CreateIntrinsics(realm)
 Сначала создаётся **Object prototype**.
 
 Почему?
-
 Потому что:
-
-- Все обычные объекты должны иметь [[Prototype]]
-    
+- Все обычные объекты должны иметь `[[Prototype]]`
 - Базовый объект без прототипа — это `%Object.prototype%`
-    
-- Его [[Prototype]] = null
-    
+- Его `[[Prototype]]` = null
 
 Он создаётся через:
-
 OrdinaryObjectCreate(null)
-
 То есть:
-
 %Object.prototype% = {  
-  [[Prototype]]: null  
+  `[[Prototype]]`: null  
 }
 
 Это первый обычный объект всей системы.
@@ -116,7 +93,7 @@ OrdinaryObjectCreate(null)
 Он создаётся НЕ через `new Object()`  
 Он создаётся через внутреннюю операцию:
 
-OrdinaryObjectCreate
+`OrdinaryObjectCreate`
 
 ---
 
@@ -124,66 +101,58 @@ OrdinaryObjectCreate
 
 После `%Object.prototype%`.
 
-%Object% = CreateBuiltinFunction(...)
+`%Object% = CreateBuiltinFunction(...)`
 
 И:
 
-%Object%.[[Prototype]] = %Function.prototype%  
-%Object%.prototype = %Object.prototype%
+`%Object%.[[Prototype]] = %Function.prototype%`  
+`%Object%.prototype = %Object.prototype%`
 
 То есть:
 
-%Object.prototype%  ←  самый первый обычный объект  
+`%Object.prototype%`  ←  самый первый обычный объект  
         ↑  
-%Object%
+`%Object%`
 
 ---
 
 # 🧬 4️⃣ А %Function.prototype%?
 
-Тоже создаётся в CreateIntrinsics.
-
+Тоже создаётся в `CreateIntrinsics`.
 Но тут есть интересная особенность:
-
 `%Function.prototype%` — это функция, но у неё:
-
-[[Prototype]] = %Object.prototype%
-
+`[[Prototype]] = %Object.prototype%`
 Получается базовая цепочка:
-
-null  
+`null`  
   ↑  
-%Object.prototype%  
+`%Object.prototype%`  
   ↑  
-%Function.prototype%  
+`%Function.prototype%`  
   ↑  
-%Function%
+`%Function%`
 
 ---
 
 # 🌍 5️⃣ А глобальный объект когда создаётся?
 
-После CreateIntrinsics:
-
-SetRealmGlobalObject(realm)
+После `CreateIntrinsics`:
+`SetRealmGlobalObject(realm)`
 
 Создаётся:
-
-globalObject = OrdinaryObjectCreate(%Object.prototype%)
-
+`globalObject` = `OrdinaryObjectCreate(%Object.prototype%)`
 Вот он уже наследуется от `%Object.prototype%`.
 
 ---
 
 # 🎯 ИТОГ: порядок создания
 
-1️⃣ CreateRealm  
-2️⃣ CreateIntrinsics  
+1️⃣ `CreateRealm`  
+2️⃣ `CreateIntrinsics`  
 3️⃣ Создаётся `%Object.prototype%`  
-4️⃣ Создаются остальные intrinsic объекты  
-5️⃣ Создаётся globalObject  
-6️⃣ Создаётся Global Environment  
-7️⃣ Создаётся Global Execution Context
+4️⃣ Создаются остальные `intrinsic` объекты  
+5️⃣ Создаётся `globalObject`  
+6️⃣ Создаётся `Global Environment`  
+7️⃣ Создаётся `Global Execution Context`
 
 ---
 
@@ -193,45 +162,32 @@ globalObject = OrdinaryObjectCreate(%Object.prototype%)
 
 И:
 
-- У него [[Prototype]] = null
-    
+- У него `[[Prototype]]` = null
 - Он корень всей прототипной цепочки
-    
 - ВСЕ обычные объекты в итоге указывают на него
-    
 
 ---
 
 # 🔍 Что происходит при new Object()?
 
-new Object()
+`new Object()`
 
 вызывает:
-
-OrdinaryCreateFromConstructor
-
+`OrdinaryCreateFromConstructor`
 который делает:
-
-OrdinaryObjectCreate(%Object.prototype%)
-
+`OrdinaryObjectCreate(%Object.prototype%)`
 То есть любой объект:
-
-obj → %Object.prototype% → null
+obj → `%Object.prototype%` → null
 
 ---
 
 # 🧠 Важный вывод
 
-Realm формирует:
-
-- Intrinsics
-    
-- Prototype chain
-    
-- Constructors
-    
-- Global object
-    
+`Realm` формирует
+- `Intrinsics`
+- `Prototype chain`
+- `Constructors`
+- `Global object`
 
 Это делается ДО любого пользовательского кода.
 
@@ -239,10 +195,10 @@ Realm формирует:
 
 # 🔥 Глубокий инсайт
 
-Execution Context появляется ПОСЛЕ Realm.
+`Execution Context` появляется ПОСЛЕ `Realm`.
 
-Realm — это вселенная.  
-Execution Context — это поток выполнения внутри неё.
+`Realm` — это вселенная.  
+`Execution Context` — это поток выполнения внутри неё.
 
 ---
 
@@ -260,14 +216,9 @@ Execution Context — это поток выполнения внутри неё
 ---
 
 Если хочешь — можем:
-
 - смоделировать CreateRealm в нашем mini-движке
-    
 - вручную создать intrinsic graph
-    
 - нарисовать реальную схему prototype chain
-    
 - разобрать почему typeof null === "object"
-    
 
 Куда копаем дальше? 😈

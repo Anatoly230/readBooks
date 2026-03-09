@@ -8,21 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9ab29edb9ca2b4e6",
+            "id": "020b58c32511a466",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/4. Поднятие.md",
+                "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/2-я часть  -  this и прототипы объектов/6 . Что такое this.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Поднятие"
+              "title": "6 . Что такое this"
             }
           },
           {
-            "id": "8836a5c03b003932",
+            "id": "9ab29edb9ca2b4e6",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -34,7 +34,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -47,6 +46,7 @@
       {
         "id": "0ff5f71e41889867",
         "type": "tabs",
+        "dimension": 65.39792387543253,
         "children": [
           {
             "id": "a491e4796b7eba8c",
@@ -93,6 +93,7 @@
       {
         "id": "ed4b76c3723f2a54",
         "type": "tabs",
+        "dimension": 34.602076124567475,
         "children": [
           {
             "id": "2fb638f0bd2cfd8d",
@@ -108,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 500.5086555480957,
-    "collapsed": true
+    "width": 500.5086555480957
   },
   "right": {
     "id": "da29d409c77516e6",
@@ -225,101 +225,59 @@
       "bases:Create new base": false
     }
   },
-  "floating": {
-    "id": "6459d15c72c75c3b",
-    "type": "floating",
-    "children": [
-      {
-        "id": "fb550ed8cc85a2a4",
-        "type": "window",
-        "children": [
-          {
-            "id": "76816d452953c2b7",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6a572e55fa56f740",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/Схемы/Движок - область видимости- компилятор.canvas",
-                    "viewState": {
-                      "x": 0,
-                      "y": 0,
-                      "zoom": -0.578703688692675
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "Движок - область видимости- компилятор"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 608,
-        "y": 42,
-        "width": 1437,
-        "height": 765,
-        "maximize": false,
-        "zoom": 3
-      }
-    ]
-  },
-  "active": "8836a5c03b003932",
+  "active": "020b58c32511a466",
   "lastOpenFiles": [
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/4. Поднятие.md",
     "{YDKJSY}Знакомьтесь js/src/Замыкания_и_объекты.pdf",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/3. Функциональные и блочные области видимости.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1. Что такое область видимости.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/2. Лексическая область видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/2-я часть  -  this и прототипы объектов/6 . Что такое this.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/2-я часть  -  this и прототипы объектов/Предисловие.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания/Приложение В. Лексическое this.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания/Приложение Б. Полифилы для блочной области видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания/Приложение А. Динамическая область видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания/5. Замыкание области видимости.md",
+    "ECMASCRIPT/deepseek.md",
+    "ECMASCRIPT/исполнение кода и функции пошагово(deepseek).md",
+    "ECMASCRIPT/что такое Realm Object.prototype Function.prototype.md",
+    "ECMASCRIPT/Разница prototype и __proto__.md",
+    "ECMASCRIPT/схемы/Устройство функции.canvas",
+    "ECMASCRIPT/От текста к выполнению кода.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания/4. Поднятие.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания/3. Функциональные и блочные области видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/2-я часть  -  this и прототипы объектов",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания",
+    "conflict-files-obsidian-git.md",
+    "Untitled.md",
+    "FormalParameters.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания/1. Что такое область видимости.md",
+    "{YDKJSY}Знакомьтесь js/src/все книги на англ. серии YDKJSY.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Столпы.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/1-я часть - Область видимости и замыкания/2. Лексическая область видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
+    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/Схемы/Движок - область видимости- компилятор.canvas",
     "images/Pasted image 20260306190500.png",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/Схемы/Глава 1 упражнение.canvas",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/Схемы/Движок - область видимости- компилятор.canvas",
     "Untitled 1.md",
     "Untitled.base",
-    "Untitled.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/Схемы",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты/Untitled.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Знакомство_книга 1/Последовательность изучения.md",
     "Devid Flenagan -js guide/src/devid_flenagan_-_javascript_podrobnoe_rukovodstvo.pdf",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Приложение Б.md",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/1. Что такое область видимости.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/2. Лексическая видимость.md",
     "images/Pasted image 20260120132429.png",
     "images/Pasted image 20260120132510.png",
     "images/Pasted image 20260123161952.png",
     "images/Pasted image 20260129215522.png",
     "images/Pasted image 20260130195114.png",
-    "ECMASCRIPT/что происходит с функцией от создания до вызова.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкание и объекты",
-    "{YDKJSY}Знакомьтесь js/conspects/Untitled.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/tempCodeRunnerFile.js",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/moduls.js",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/modulCalc.js",
-    "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/clouse.js",
-    "conflict-files-obsidian-git.md",
-    "ECMASCRIPT/что такое Realm.md",
     "ECMASCRIPT/схемы/environment record.canvas",
     "ECMASCRIPT/схемы/deepsek Execution context Environment record Realm.canvas",
     "ECMASCRIPT/схемы/Execution context Environment record Realm.canvas",
     "ECMASCRIPT/схемы/Execution Contexts.canvas",
-    "ECMASCRIPT/отличия environmentRecord и lexicalEnvironment.md",
-    "ECMASCRIPT/Разница prototype и __proto__.md",
-    "ECMASCRIPT/Последовательность.md",
-    "ECMASCRIPT/deepseek.md",
-    "ECMASCRIPT/Execution Contexts,  Environment Records.md",
-    "Библия/src/Bible.pdf",
-    "ECMASCRIPT/схемы/что такое Realm.md",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/factorize.canvas",
     "{YDKJSY}Знакомьтесь js/conspects/Замыкания и области видимости/Задания к приложению Б/Схемы/Области видимости функции -startCityzen-.canvas",
-    "ECMASCRIPT/Примитивный движок согласно Ecmascript.md",
-    "ECMASCRIPT/поэтапность выполнения кода в Ecmscript.md",
-    "ECMASCRIPT/От текста к выполнению кода.md",
-    "ECMASCRIPT/схемы/Untitled 1.canvas",
-    "ECMASCRIPT/Декларация функиции, запись нового объекта функции.md",
-    "ECMASCRIPT/Показать.md",
     "Functional-Light-JS/src/Original/manuscript/images/marketing/social-header.png",
     "Functional-Light-JS/src/Original/manuscript/images/marketing/social-avatar.png",
     "Functional-Light-JS/src/Original/manuscript/images/marketing/print-book-cover.png",
